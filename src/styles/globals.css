@@ -105,13 +105,13 @@
 
 .custom-list-disc {
   list-style-type: none;
-  padding-left: 1.5em; /* Adjust the spacing based on your design */
+  padding-left: 1.5em;
 }
 
 .custom-list-disc li::before {
-  content: "•"; /* Unicode character for a bullet, you can replace it with your custom symbol */
-  color: #C69749; /* Custom color for the bullet */
+  content: "•";
+  color: #c69749;
   display: inline-block;
-  width: 1em; /* Adjust the size of the bullet */
-  margin-left: -1em; /* Adjust the spacing between the bullet and the text */
+  width: 1em;
+  margin-left: -1em;
 }

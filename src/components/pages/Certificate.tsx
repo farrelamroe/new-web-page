@@ -45,7 +45,10 @@ export function Certificate() {
               </td>
               <td>
                 <H5>
-                  <a href={url} className="hover:font-bold duration-300">
+                  <a
+                    href={url}
+                    className="hover:font-bold duration-300"
+                    target="blank">
                     here
                   </a>
                 </H5>

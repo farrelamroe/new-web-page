@@ -1,14 +1,14 @@
-import { Container, H1, H3 } from "@/components";
+import { Container, H1 } from "@/components";
 import data from "@/components/data/dataSkill";
 import Image from "next/image";
-import "aos/dist/aos.css"
-import AOS from "aos"
+import "aos/dist/aos.css";
+import AOS from "aos";
 import { useEffect } from "react";
 
 export function Skill() {
   useEffect(() => {
-    AOS.init()
-  })
+    AOS.init();
+  });
   return (
     <Container>
       <div data-aos="fade-left" data-aos-duration="1000">

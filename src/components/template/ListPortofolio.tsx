@@ -39,14 +39,15 @@ export function ListPortofolio(props: any) {
         } flex flex-col gap-y-5 overflow-hidden text-justify duration-1000 mt-[16px]`}>
         {children}
         <div className="flex flex-row gap-x-[8px]">
-          {repositoryUrl &&
-            (repositoryText != null && (
-              <Button href={repositoryUrl} text={repositoryText} />
-            ))}
-          {figmaUrl &&
-            (figmaText != null && <Button href={figmaUrl} text={figmaText} />)}
-          {linkUrl &&
-            (linkText != null && <Button href={linkUrl} text={linkText} />)}
+          {repositoryUrl && repositoryText != null && (
+            <Button href={repositoryUrl} text={repositoryText} />
+          )}
+          {figmaUrl && figmaText != null && (
+            <Button href={figmaUrl} text={figmaText} />
+          )}
+          {linkUrl && linkText != null && (
+            <Button href={linkUrl} text={linkText} />
+          )}
         </div>
       </div>
     </>

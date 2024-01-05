@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Container, H2, H3, H4, H5 } from "@/components";
 import data from "@/components/data/dataProfile";
 import "aos/dist/aos.css";
-import AOS from "aos"
+import AOS from "aos";
 import { useEffect } from "react";
 
 export function Profile() {
@@ -42,7 +42,9 @@ export function Profile() {
                 className={`bg-primary-200 text-center rounded-[8px] border-1 py-1 px-3 max-w-[100%] lg:max-w-[75%] ${
                   href == "" ? "" : "hover:font-bold duration-300"
                 }`}>
-                <a href={href}>{text}</a>
+                <a href={href} target="blank">
+                  {text}
+                </a>
               </H5>
             </div>
           );

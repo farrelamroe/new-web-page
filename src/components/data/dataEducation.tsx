@@ -21,13 +21,11 @@ const data = [
     achievement: (
       <>
         <ul className="custom-list-disc">
-          <li>
-            Best Costume LKBB Porsimaptar 2018
-          </li>
+          <li>Best Costume LKBB Porsimaptar 2018</li>
         </ul>
       </>
     ),
   },
 ];
 
-export default data
+export default data;

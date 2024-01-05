@@ -1,4 +1,4 @@
-import { Container, H1, H5, List } from "@/components";
+import { Container, H1, List } from "@/components";
 import data from "@/components/data/dataWorkExperiences";
 import "aos/dist/aos.css";
 import AOS from "aos";

@@ -1,5 +1,5 @@
 export function Text(props: any) {
-  const { size, color, children, className } = props;
+  const { size, children, className } = props;
   let fontSize;
   if (size === "small") {
     fontSize = "text-[10px] lg:text-[12px] leading-[12px] lg:leading-[14px]";

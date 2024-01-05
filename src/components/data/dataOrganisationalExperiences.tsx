@@ -292,13 +292,13 @@ const data = [
       <>
         <ul className="custom-list-disc">
           <li>
-            Bekerja sama dengan 9 orang untuk menjaga keamanan selama Dekan Cup FMIPA UGM berlangsung
+            Bekerja sama dengan 9 orang untuk menjaga keamanan selama Dekan Cup
+            FMIPA UGM berlangsung
           </li>
+          <li>Bertanggung jawab dalam menjaga acara tetap kondusif</li>
           <li>
-            Bertanggung jawab dalam menjaga acara tetap kondusif
-          </li>
-          <li>
-            Menertibkan seluruh penonton, peserta dan panitia selama acara berlangsung
+            Menertibkan seluruh penonton, peserta dan panitia selama acara
+            berlangsung
           </li>
         </ul>
       </>
