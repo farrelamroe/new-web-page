@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@100;200;300;400;700&display=swap");
 
 @tailwind base;
 @tailwind components;
@@ -110,7 +110,7 @@
 
 .custom-list-disc li::before {
   content: "•"; /* Unicode character for a bullet, you can replace it with your custom symbol */
-  color: #ff0000; /* Custom color for the bullet */
+  color: #C69749; /* Custom color for the bullet */
   display: inline-block;
   width: 1em; /* Adjust the size of the bullet */
   margin-left: -1em; /* Adjust the spacing between the bullet and the text */

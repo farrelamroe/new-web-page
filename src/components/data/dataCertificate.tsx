@@ -5,6 +5,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/JMZVG4GVOZN9",
+    delay: "200",
   },
   {
     title: "Memulai Pemrograman Dengan Python",
@@ -12,6 +13,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/4EXG57L7GXRL",
+    delay: "300",
   },
   {
     title: "Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)",
@@ -19,6 +21,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/QLZ9K1Y57Z5D",
+    delay: "400",
   },
   {
     title: "Belajar Dasar Pemrograman JavaScript",
@@ -26,6 +29,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/KEXLGG9YMZG2",
+    delay: "500",
   },
   {
     title: "Belajar Membuat Aplikasi Back-End untuk Pemula",
@@ -33,6 +37,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/98XWR46DWZM3",
+    delay: "600",
   },
   {
     title: "Belajar Dasar Pemrograman Web",
@@ -40,6 +45,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/2VX31YQE4ZYQ",
+    delay: "700",
   },
   {
     title: "Belajar Membuat Front-End Web untuk Pemula",
@@ -47,6 +53,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/4EXG5751QXRL",
+    delay: "800",
   },
   {
     title: "Memulai Pemrograman dengan Dart",
@@ -54,6 +61,7 @@ const data = [
     course: "Dicoding",
     year: "2023",
     url: "https://www.dicoding.com/certificates/98XWV0039PM3",
+    delay: "900",
   },
   {
     title: "7 Days of Code: Mastering Flutter User-Interface Design",
@@ -61,6 +69,7 @@ const data = [
     course: "Build With Angga",
     year: "2023",
     url: "https://class.buildwithangga.com/talent/farrelamroe/flutter-dart-crash-course-modern-ui-design",
+    delay: "1000",
   },
 ];
 

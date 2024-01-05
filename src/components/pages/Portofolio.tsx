@@ -1,36 +1,46 @@
 import { Container, H1, ListPortofolio } from "@/components";
 import data from "@/components/data/dataPortofolio";
+import "aos/dist/aos.css";
+import AOS from "aos";
+import { useEffect } from "react";
 
 export function Portofolio() {
+  useEffect(() => {
+    AOS.init();
+  });
   return (
     <Container>
-      <H1>Portofolio</H1>
-      {data.map(
-        ({
-          title,
-          children,
-          repositoryUrl,
-          repositoryText,
-          linkUrl,
-          linkText,
-          figmaUrl,
-          figmaText,
-        }) => {
-          return (
-            <ListPortofolio
-              title={title}
-              key={title}
-              repositoryUrl={repositoryUrl}
-              repositoryText={repositoryText}
-              linkUrl={linkUrl}
-              linkText={linkText}
-              figmaUrl={figmaUrl}
-              figmaText={figmaText}>
-              {children}
-            </ListPortofolio>
-          );
-        }
-      )}
+      <div data-aos="fade-left" data-aos-duration="1000">
+        <H1>Portofolio</H1>
+      </div>
+      <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
+        {data.map(
+          ({
+            title,
+            children,
+            repositoryUrl,
+            repositoryText,
+            linkUrl,
+            linkText,
+            figmaUrl,
+            figmaText,
+          }) => {
+            return (
+              <ListPortofolio
+                title={title}
+                key={title}
+                repositoryUrl={repositoryUrl}
+                repositoryText={repositoryText}
+                linkUrl={linkUrl}
+                linkText={linkText}
+                figmaUrl={figmaUrl}
+                figmaText={figmaText}>
+                {children}
+              </ListPortofolio>
+            );
+          }
+        )}
+      </div>
     </Container>
   );
 }

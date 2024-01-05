@@ -2,6 +2,121 @@ import { H5, Text } from "@/components";
 
 const data = [
   {
+    title: "Binar Academy LMS",
+    repositoryUrl: null,
+    linkUrl: "https://lms.binarian.co/",
+    linkText: "Link",
+    repositoryText: null,
+    children: (
+      <>
+        <H5>
+          Web ini merupakan salah satu proyek kelompok pada saat Intern di Binar
+          Academy sebagai Frontend Engineer. Proyek ini membangun Learning
+          Management System (LMS) yang digunakan perusahaan untuk kepentingan
+          belajar mengajar di Binar Academy. Bahasa pemrograman yang digunakan
+          adalah Next.js, Bootstrap, dan SCSS.
+        </H5>
+      </>
+    ),
+  },
+  {
+    title: "Binar Academy CMS",
+    repositoryUrl: null,
+    linkUrl: "https://dash.binarian.co/",
+    linkText: "Link",
+    repositoryText: null,
+    children: (
+      <>
+        <H5>
+          Web ini merupakan salah satu proyek kelompok pada saat Intern di Binar
+          Academy sebagai Frontend Engineer. Proyek ini membangun Content
+          Management System yang digunakan perusahaan untuk kepentingan belajar
+          mengajar di Binar Academy. Bahasa pemrograman yang digunakan adalah
+          Vue.js, Bootstrap, dan SCSS.
+        </H5>
+      </>
+    ),
+  },
+  {
+    title: "PPSMB UGM 2023",
+    repositoryUrl: null,
+    linkUrl: "https://ppsmb.ugm.ac.id/2023/",
+    linkText: "Link",
+    repositoryText: null,
+    children: (
+      <>
+        <H5>
+          Proyek ini merupakan proyek divisi Humpubit PPSMB UGM 2023. Proyek ini
+          membuat website yang digunakan mahasiswa baru untuk mengetahui lebih
+          lanjut tentang PPSMB UGM 2023. Posisi saya dalam proyek ini sebagai
+          Frontend Developer. Bahasa pemrograman yang digunakan adalah Next.js
+          dan Tailwind CSS.
+        </H5>
+        <Text size="regular">
+          *Note: untuk membuka link diatas, harus menggunakan OpenVPN atau Wifi
+          UGM agar bisa mengakses
+        </Text>
+      </>
+    ),
+  },
+  {
+    title: "Porsenigama 2022",
+    repositoryUrl: "https://github.com/IskanMr/porsenigama-22",
+    linkUrl: "https://ukm.ugm.ac.id/2022/porsenigama/",
+    linkText: "Link",
+    repositoryText: "GitHub",
+    figmaUrl:
+      "https://www.figma.com/file/ADfbcH358aer1obGJv99JP/Web-Porsenigama-2022?node-id=1%3A2&t=KSN3Z7UlXY0lwcuN-1",
+    figmaText: "Figma",
+    children: (
+      <>
+        <H5>
+          Project ini merupakan project kepanitiaan yang diadakan oleh UGM. Isi
+          dari web ini berupa info seputar Porsenigama 2022. Saya disini sebagai
+          UI/UX Designer. Bahasa yang digunakan berupa ReactJs dan tailwind.
+          Untuk design UI/UX sendiri menggunakan figma.
+        </H5>
+      </>
+    ),
+  },
+  {
+    title: "Blasout 2023",
+    repositoryUrl: "https://github.com/Bravonoid/blastout-23",
+    linkUrl: "https://blastout.balairungklassugm.com",
+    linkText: "Link",
+    repositoryText: "GitHub",
+    children: (
+      <>
+        <H5>
+          Project ini merupakan project kepanitiaan yang diadakan oleh
+          Balairungklass. Isi dari web ini berupa info seputar Blastout 2023.
+          Saya disini sebagai Front-End Developer. Bahasa yang digunakan berupa
+          NextJs dan tailwind. Untuk design UI/UX sendiri menggunakan figma.
+        </H5>
+      </>
+    ),
+  },
+  {
+    title: "Joints UGM",
+    repositoryUrl:
+      "https://github.com/Jogja-Information-Technology-Session/joints23-web",
+    linkUrl: "https://www.jointsugm.id",
+    linkText: "Link",
+    repositoryText: "GitHub",
+    children: (
+      <>
+        <H5>
+          Project ini merupakan project kepanitiaan yang diadakan oleh Ilmu
+          Komputer. Isi dari web ini berupa info seputar Joints 2023. Project
+          ini lebih kompleks karena banyak menggunakan Back-End untuk
+          pendaftaran sehingga ada fetching antara Front-End dan Back-End. Saya
+          disini sebagai Front-End Developer. Bahasa yang digunakan berupa
+          NextJs dan tailwind. Untuk design UI/UX sendiri menggunakan figma.
+        </H5>
+      </>
+    ),
+  },
+  {
     title: "iGEM UGM",
     repositoryUrl: "https://github.com/farrelamroe/wiki-2023",
     linkUrl: "https://2023.igem.wiki/ugm-indonesia/",
@@ -121,121 +236,6 @@ const data = [
           Sama seperti bookshelf yang sebelumnya, namun ini menggunakan
           back-end. Project ini untuk penugasan course dicoding. Bahasa yang
           digunakan adalah node.js, menggunakan framework hapi.
-        </H5>
-      </>
-    ),
-  },
-  {
-    title: "Binar Academy LMS",
-    repositoryUrl: null,
-    linkUrl: "https://lms.binarian.co/",
-    linkText: "Link",
-    repositoryText: null,
-    children: (
-      <>
-        <H5>
-          Web ini merupakan salah satu proyek kelompok pada saat Intern di Binar
-          Academy sebagai Frontend Engineer. Proyek ini membangun Learning
-          Management System (LMS) yang digunakan perusahaan untuk kepentingan
-          belajar mengajar di Binar Academy. Bahasa pemrograman yang digunakan
-          adalah Next.js, Bootstrap, dan SCSS.
-        </H5>
-      </>
-    ),
-  },
-  {
-    title: "Binar Academy CMS",
-    repositoryUrl: null,
-    linkUrl: "https://dash.binarian.co/",
-    linkText: "Link",
-    repositoryText: null,
-    children: (
-      <>
-        <H5>
-          Web ini merupakan salah satu proyek kelompok pada saat Intern di Binar
-          Academy sebagai Frontend Engineer. Proyek ini membangun Content
-          Management System yang digunakan perusahaan untuk kepentingan belajar
-          mengajar di Binar Academy. Bahasa pemrograman yang digunakan adalah
-          Vue.js, Bootstrap, dan SCSS.
-        </H5>
-      </>
-    ),
-  },
-  {
-    title: "PPSMB UGM 2023",
-    repositoryUrl: null,
-    linkUrl: "https://ppsmb.ugm.ac.id/2023/",
-    linkText: "Link",
-    repositoryText: null,
-    children: (
-      <>
-        <H5>
-          Proyek ini merupakan proyek divisi Humpubit PPSMB UGM 2023. Proyek ini
-          membuat website yang digunakan mahasiswa baru untuk mengetahui lebih
-          lanjut tentang PPSMB UGM 2023. Posisi saya dalam proyek ini sebagai
-          Frontend Developer. Bahasa pemrograman yang digunakan adalah Next.js
-          dan Tailwind CSS.
-        </H5>
-        <Text size="regular">
-          *Note: untuk membuka link diatas, harus menggunakan OpenVPN atau Wifi
-          UGM agar bisa mengakses
-        </Text>
-      </>
-    ),
-  },
-  {
-    title: "Porsenigama 2022",
-    repositoryUrl: "https://github.com/IskanMr/porsenigama-22",
-    linkUrl: "https://ukm.ugm.ac.id/2022/porsenigama/",
-    linkText: "Link",
-    repositoryText: "GitHub",
-    figmaUrl:
-      "https://www.figma.com/file/ADfbcH358aer1obGJv99JP/Web-Porsenigama-2022?node-id=1%3A2&t=KSN3Z7UlXY0lwcuN-1",
-    figmaText: "Figma",
-    children: (
-      <>
-        <H5>
-          Project ini merupakan project kepanitiaan yang diadakan oleh UGM. Isi
-          dari web ini berupa info seputar Porsenigama 2022. Saya disini sebagai
-          UI/UX Designer. Bahasa yang digunakan berupa ReactJs dan tailwind.
-          Untuk design UI/UX sendiri menggunakan figma.
-        </H5>
-      </>
-    ),
-  },
-  {
-    title: "Blasout 2023",
-    repositoryUrl: "https://github.com/Bravonoid/blastout-23",
-    linkUrl: "https://blastout.balairungklassugm.com",
-    linkText: "Link",
-    repositoryText: "GitHub",
-    children: (
-      <>
-        <H5>
-          Project ini merupakan project kepanitiaan yang diadakan oleh
-          Balairungklass. Isi dari web ini berupa info seputar Blastout 2023.
-          Saya disini sebagai Front-End Developer. Bahasa yang digunakan berupa
-          NextJs dan tailwind. Untuk design UI/UX sendiri menggunakan figma.
-        </H5>
-      </>
-    ),
-  },
-  {
-    title: "Joints UGM",
-    repositoryUrl:
-      "https://github.com/Jogja-Information-Technology-Session/joints23-web",
-    linkUrl: "https://www.jointsugm.id",
-    linkText: "Link",
-    repositoryText: "GitHub",
-    children: (
-      <>
-        <H5>
-          Project ini merupakan project kepanitiaan yang diadakan oleh Ilmu
-          Komputer. Isi dari web ini berupa info seputar Joints 2023. Project
-          ini lebih kompleks karena banyak menggunakan Back-End untuk
-          pendaftaran sehingga ada fetching antara Front-End dan Back-End. Saya
-          disini sebagai Front-End Developer. Bahasa yang digunakan berupa
-          NextJs dan tailwind. Untuk design UI/UX sendiri menggunakan figma.
         </H5>
       </>
     ),

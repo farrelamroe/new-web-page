@@ -11,6 +11,7 @@ import {
   Skill,
 } from "@/components";
 import data from "@/components/data/dataNavbar";
+import Image from "next/image";
 
 export default function Home() {
   const [page, setPage] = useState(0);
@@ -25,16 +26,21 @@ export default function Home() {
           open ? "w-[75vw]" : "w-0"
         } block lg:hidden`}>
         <div className="flex flex-col justify-start top-[50%] relative translate-y-[-50%] pl-[32px] gap-y-[16px]">
-          {data.map(({ SetPage, text }) => {
+          {data.map(({ SetPage, text, imageUrl }) => {
             return (
-              <button onClick={() => setPage(SetPage)} key={text}>
-                <H2
-                  className={`hover:font-bold text-start ${
-                    page === SetPage ? "font-bold" : ""
-                  }`}>
-                  {text}
-                </H2>
-              </button>
+              <div
+                className="flex flex-row justify-start items-center gap-x-[8px] hover:font-bold duration-300"
+                key="">
+                <Image src={imageUrl} alt="" height={24} width={24} />
+                <button onClick={() => setPage(SetPage)} key={text}>
+                  <H2
+                    className={`text-start ${
+                      page === SetPage ? "font-bold" : ""
+                    }`}>
+                    {text}
+                  </H2>
+                </button>
+              </div>
             );
           })}
         </div>
@@ -61,16 +67,21 @@ export default function Home() {
       <nav
         className={`fixed z-[100] h-screen overflow-y-hidden bg-primary-100 duration-1000 border-r-2 border-secondary-200 font-garamond text-secondary-200 max-w-[25vw] hidden lg:block`}>
         <div className="flex flex-col justify-start top-[50%] relative translate-y-[-50%] pl-[32px] gap-y-[16px]">
-          {data.map(({ SetPage, text }) => {
+          {data.map(({ SetPage, text, imageUrl }) => {
             return (
-              <button onClick={() => setPage(SetPage)} key={text}>
-                <H2
-                  className={`hover:font-bold text-start ${
-                    page === SetPage ? "font-bold" : ""
-                  }`}>
-                  {text}
-                </H2>
-              </button>
+              <div
+                className="flex flex-row justify-start items-center gap-x-[8px] hover:font-bold duration-300"
+                key="">
+                <Image src={imageUrl} alt="" height={24} width={24} />
+                <button onClick={() => setPage(SetPage)} key={text}>
+                  <H2
+                    className={`text-start ${
+                      page === SetPage ? "font-bold" : ""
+                    }`}>
+                    {text}
+                  </H2>
+                </button>
+              </div>
             );
           })}
         </div>
