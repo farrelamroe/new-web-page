@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { Container, H1, H3, TypingAnimation } from "@/components";
 import { useEffect } from "react";

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { H5, Text } from "@/components";
 
 const data = [
@@ -242,9 +243,13 @@ const data = [
           Project ini merupakan project iseng sekaligus untuk penugasan course
           dicoding pada kelas front-end. Project ini bisa mencatat judul,
           penulis, dan tahun terbit buku yang sudah dibaca atau belum. Konsepnya
-          adalah pencatatan buku yang sudah dibaca. Bahasa yang digunakan adalah
-          HTML, CSS, dan javascript.
+          adalah pencatatan buku yang sudah dibaca.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/html.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/css.png" alt="" className="max-w-[32px]" />
+          <img src="/images/javascript.svg" alt="" className="max-w-[32px]" />
+        </div>
       </>
     ),
   },
@@ -262,6 +267,11 @@ const data = [
           CSS, javascript. Project ini sederhana, mengkonvert suhu ke satuan
           yang lain.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/html.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/css.png" alt="" className="max-w-[32px]" />
+          <img src="/images/javascript.svg" alt="" className="max-w-[32px]" />
+        </div>
       </>
     ),
   },
@@ -278,6 +288,10 @@ const data = [
           back-end. Project ini untuk penugasan course dicoding. Bahasa yang
           digunakan adalah node.js, menggunakan framework hapi.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/node.png" alt="" className="max-h-[32px]" />
+          <img src="/images/hapi.png" alt="" className="max-h-[32px]" />
+        </div>
       </>
     ),
   },
@@ -290,6 +304,10 @@ const data = [
           Design yang saya gunakan menggunakan design project kepanitiaan
           sebelumnya, seperti Festival Gadjah Mada dan Blasout.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/flutter.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/dart.svg" alt="" className="max-w-[32px]" />
+        </div>
       </>
     ),
   },

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useEffect, useState } from "react";
 import {
   Profile,
@@ -44,6 +45,26 @@ export default function Home() {
             );
           })}
         </div>
+        <img
+          src="/images/heart.svg"
+          className="absolute right-2 bottom-2 w-[64px] heart"
+          alt=""
+        />
+        <img
+          src="/images/suit-diamond-fill.svg"
+          className="absolute top-2 left-2 w-[64px] diamond"
+          alt=""
+        />
+        <img
+          src="/images/suit-club-fill.svg"
+          className="absolute left-2 bottom-2 w-[64px] club"
+          alt=""
+        />
+        <img
+          src="/images/suit-spade-fill.svg"
+          className="absolute right-2 top-2 w-[64px] spade"
+          alt=""
+        />
       </nav>
       <button
         onClick={() => setOpen((prev) => !prev)}
@@ -65,7 +86,7 @@ export default function Home() {
         </svg>
       </button>
       <nav
-        className={`fixed z-[100] h-screen overflow-y-hidden bg-primary-100 duration-1000 border-r-2 border-secondary-200 font-garamond text-secondary-200 max-w-[25vw] hidden lg:block`}>
+        className={`fixed z-[100] h-screen overflow-hidden bg-primary-100 duration-1000 border-r-2 border-secondary-200 font-garamond text-secondary-200 max-w-[25vw] hidden lg:block`}>
         <div className="flex flex-col justify-start top-[50%] relative translate-y-[-50%] pl-[32px] gap-y-[16px]">
           {data.map(({ SetPage, text, imageUrl }) => {
             return (
@@ -85,6 +106,26 @@ export default function Home() {
             );
           })}
         </div>
+        <img
+          src="/images/heart.svg"
+          className="absolute right-2 bottom-2 w-[64px] heart"
+          alt=""
+        />
+        <img
+          src="/images/suit-diamond-fill.svg"
+          className="absolute top-2 left-2 w-[64px] diamond"
+          alt=""
+        />
+        <img
+          src="/images/suit-club-fill.svg"
+          className="absolute left-2 bottom-2 w-[64px] club"
+          alt=""
+        />
+        <img
+          src="/images/suit-spade-fill.svg"
+          className="absolute right-2 top-2 w-[64px] spade"
+          alt=""
+        />
       </nav>
       <main className={`w-[100vw] lg:w-[75vw] absolute right-0 duration-1000`}>
         {page === 0 && <Profile />}

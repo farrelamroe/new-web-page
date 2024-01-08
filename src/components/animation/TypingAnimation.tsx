@@ -34,7 +34,7 @@ export function TypingAnimation({
     return () => {
       clearTimeout(delayTimer);
     };
-  }, [originalText, delay]);
+  }, [originalText, delay, speed]);
 
   return <span>{text}</span>;
 }

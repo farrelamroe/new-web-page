@@ -29,5 +29,15 @@ const data = [
     text: "farrelamroe",
     href: "https://www.instagram.com/farrelamroe/",
   },
+  {
+    title: "CV",
+    text: "download",
+    href: "https://drive.google.com/file/d/1Gs4CwGjSEJBUFQF4Lm1OMFdSFv7a4G5T/view?usp=sharing",
+  },
+  {
+    title: "Portofolio",
+    text: "download",
+    href: "https://drive.google.com/drive/u/0/my-drive",
+  },
 ];
 export default data;

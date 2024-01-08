@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import { Container, H2, H3, H4, H5, TypingAnimation } from "@/components";
 import data from "@/components/data/dataProfile";
@@ -16,7 +17,7 @@ export function Profile() {
         data-aos="fade-left"
         data-aos-duration="1000">
         <img
-          src="/images/Foto Individu_IT_Keamanan_Farrel Amroe Azhari_MIPA 2021.JPG"
+          src="/images/Foto Individu_IT_Keamanan_Farrel Amroe Azhari_MIPA 2021.jpg"
           alt="poto"
           height={200}
           width={200}
@@ -24,15 +25,15 @@ export function Profile() {
         />
         <div className="flex flex-col justify-center items-center text-center lg:justify-start lg:text-start lg:items-start gap-y-2">
           <H2>
-            <TypingAnimation originalText="Farrel Amroe Azhari" />
+            <TypingAnimation originalText="Farrel Amroe Azhari" delay={1000} />
           </H2>
           <H3>
-            <TypingAnimation originalText="Web Developer" delay={300} />
+            <TypingAnimation originalText="Web Developer" delay={1000} />
           </H3>
         </div>
       </div>
       <div
-        className="grid grid-cols-1 lg:grid-cols-2 text-center items-center justify-center gap-y-[64px] text-secondary-200 pt-[32px]"
+        className="grid grid-cols-1 lg:grid-cols-2 text-center items-center justify-center gap-y-[32px] text-secondary-200 pt-[32px]"
         data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-delay="300">
@@ -41,15 +42,13 @@ export function Profile() {
             <div
               className="flex flex-col justify-center lg:justify-start lg:text-start gap-y-[5px]"
               key={title}>
-              <H4>
-                <TypingAnimation originalText={`${title}:`} delay={500} />
-              </H4>
+              <H4>{title}:</H4>
               <H5
                 className={`bg-primary-200 text-center rounded-[8px] border-1 py-1 px-3 max-w-[100%] lg:max-w-[75%] ${
                   href == "" ? "" : "hover:font-bold duration-300"
                 }`}>
                 <a href={href} target="blank">
-                  <TypingAnimation originalText={text} delay={500} />
+                  {text}
                 </a>
               </H5>
             </div>
