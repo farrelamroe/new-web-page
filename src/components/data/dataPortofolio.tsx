@@ -13,9 +13,15 @@ const data = [
           Web ini merupakan salah satu proyek kelompok pada saat Intern di Binar
           Academy sebagai Frontend Engineer. Proyek ini membangun Learning
           Management System (LMS) yang digunakan perusahaan untuk kepentingan
-          belajar mengajar di Binar Academy. Bahasa pemrograman yang digunakan
-          adalah Next.js, Bootstrap, dan SCSS.
+          belajar mengajar di Binar Academy.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/next.webp" alt="" className="max-w-[32px]" />
+          <img src="/images/bootstrap.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/scss.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/go.png" alt="" className="max-w-[32px]" />
+          <img src="/images/ruby.png" alt="" className="max-w-[32px]" />
+        </div>
       </>
     ),
   },
@@ -31,9 +37,15 @@ const data = [
           Web ini merupakan salah satu proyek kelompok pada saat Intern di Binar
           Academy sebagai Frontend Engineer. Proyek ini membangun Content
           Management System yang digunakan perusahaan untuk kepentingan belajar
-          mengajar di Binar Academy. Bahasa pemrograman yang digunakan adalah
-          Vue.js, Bootstrap, dan SCSS.
+          mengajar di Binar Academy.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/vue.png" alt="" className="max-w-[32px]" />
+          <img src="/images/bootstrap.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/scss.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/go.png" alt="" className="max-w-[32px]" />
+          <img src="/images/ruby.png" alt="" className="max-w-[32px]" />
+        </div>
       </>
     ),
   },
@@ -49,13 +61,17 @@ const data = [
           Proyek ini merupakan proyek divisi Humpubit PPSMB UGM 2023. Proyek ini
           membuat website yang digunakan mahasiswa baru untuk mengetahui lebih
           lanjut tentang PPSMB UGM 2023. Posisi saya dalam proyek ini sebagai
-          Frontend Developer. Bahasa pemrograman yang digunakan adalah Next.js
-          dan Tailwind CSS.
+          Frontend Developer.
         </H5>
         <Text size="regular">
           *Note: untuk membuka link diatas, harus menggunakan OpenVPN atau Wifi
           UGM agar bisa mengakses
         </Text>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/next.webp" alt="" className="max-w-[32px]" />
+          <img src="/images/tailwind.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/strapi.png" alt="" className="max-h-[32px]" />
+        </div>
       </>
     ),
   },
@@ -73,9 +89,13 @@ const data = [
         <H5>
           Project ini merupakan project kepanitiaan yang diadakan oleh UGM. Isi
           dari web ini berupa info seputar Porsenigama 2022. Saya disini sebagai
-          UI/UX Designer. Bahasa yang digunakan berupa ReactJs dan tailwind.
-          Untuk design UI/UX sendiri menggunakan figma.
+          UI/UX Designer.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/react.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/tailwind.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/figma.svg" alt="" className="max-w-[32px]" />
+        </div>
       </>
     ),
   },
@@ -90,9 +110,12 @@ const data = [
         <H5>
           Project ini merupakan project kepanitiaan yang diadakan oleh
           Balairungklass. Isi dari web ini berupa info seputar Blastout 2023.
-          Saya disini sebagai Front-End Developer. Bahasa yang digunakan berupa
-          NextJs dan tailwind. Untuk design UI/UX sendiri menggunakan figma.
+          Saya disini sebagai Front-End Developer.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/next.webp" alt="" className="max-w-[32px]" />
+          <img src="/images/tailwind.svg" alt="" className="max-w-[32px]" />
+        </div>
       </>
     ),
   },
@@ -110,9 +133,13 @@ const data = [
           Komputer. Isi dari web ini berupa info seputar Joints 2023. Project
           ini lebih kompleks karena banyak menggunakan Back-End untuk
           pendaftaran sehingga ada fetching antara Front-End dan Back-End. Saya
-          disini sebagai Front-End Developer. Bahasa yang digunakan berupa
-          NextJs dan tailwind. Untuk design UI/UX sendiri menggunakan figma.
+          disini sebagai Front-End Developer.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/next.webp" alt="" className="max-w-[32px]" />
+          <img src="/images/tailwind.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/node.png" alt="" className="max-h-[32px]" />
+        </div>
       </>
     ),
   },
@@ -128,9 +155,12 @@ const data = [
           Project ini merupakan project individu yang digunakan untuk kompetisi
           International Genetically Engineered Machine yang diadakan di Paris,
           Perancis. Dalam kompetisi ini, saya mendapatkan Gold Medal, Best
-          Inclusivity Awards, dan Top 5 Best Diagnostic Project. Bahasa
-          pemrograman yang digunakan adalah Next.js dan Tailwind CSS.
+          Inclusivity Awards, dan Top 5 Best Diagnostic Project.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/next.webp" alt="" className="max-w-[32px]" />
+          <img src="/images/tailwind.svg" alt="" className="max-w-[32px]" />
+        </div>
       </>
     ),
   },
@@ -147,10 +177,13 @@ const data = [
           Developer Student Club 2022. Konsep project ini adalah meng-clone
           salah satu laman Gojek sebagai syarat dari tugas ini. Partisipasi saya
           dalam project ini menjadi Front-End developer dimana saya meng-clone
-          design yang sudah disediakan Gojek. Project ini menggunakan framework
-          javascript yaitu ReactJs, serta framework CSS yaitu tailwind. Project
-          ini dibuat dalam waktu 4 hari.
+          design yang sudah disediakan Gojek. Project ini dibuat dalam waktu 4
+          hari.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/react.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/tailwind.svg" alt="" className="max-w-[32px]" />
+        </div>
       </>
     ),
   },
@@ -167,9 +200,12 @@ const data = [
           divisi Front-end 2022. Konsep project ini adalah slicing design yang
           sudah disediakan oleh panitia yang menjadi syarat dalam tugas ini.
           Partisipasi saya dalam project ini menjadi Front-End developer.
-          Project ini menggunakan framework javascript yaitu ReactJs, serta
-          framework CSS yaitu tailwind. Project ini dibuat dalam waktu 4 hari.
+          Project ini dibuat dalam waktu 4 hari.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/react.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/tailwind.svg" alt="" className="max-w-[32px]" />
+        </div>
       </>
     ),
   },
@@ -184,8 +220,13 @@ const data = [
         <H5>
           Project ini merupakan project iseng sekaligus untuk penugasan course
           dicoding pada kelas front-end. Isi dari project ini adalah biodata
-          diri. Bahasa yang digunakan adalah HTML, CSS, dan javascript.
+          diri.
         </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/html.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/css.png" alt="" className="max-w-[32px]" />
+          <img src="/images/javascript.svg" alt="" className="max-w-[32px]" />
+        </div>
       </>
     ),
   },

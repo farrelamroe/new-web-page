@@ -1,4 +1,4 @@
-import { Container, H1, ListPortofolio } from "@/components";
+import { Container, H1, ListPortofolio, TypingAnimation } from "@/components";
 import data from "@/components/data/dataPortofolio";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -11,7 +11,9 @@ export function Portofolio() {
   return (
     <Container>
       <div data-aos="fade-left" data-aos-duration="1000">
-        <H1>Portofolio</H1>
+        <H1>
+          <TypingAnimation originalText="Portofolio" delay={300} />
+        </H1>
       </div>
       <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
         {data.map(

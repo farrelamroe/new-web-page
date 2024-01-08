@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Container, H2, H3, H4, H5 } from "@/components";
+import { Container, H2, H3, H4, H5, TypingAnimation } from "@/components";
 import data from "@/components/data/dataProfile";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -10,12 +10,12 @@ export function Profile() {
     AOS.init();
   }, []);
   return (
-    <Container>
+    <Container background="/images/background-profile.jpeg">
       <div
         className="flex flex-col lg:flex-row justify-center items-center gap-x-5"
         data-aos="fade-left"
         data-aos-duration="1000">
-        <Image
+        <img
           src="/images/Foto Individu_IT_Keamanan_Farrel Amroe Azhari_MIPA 2021.JPG"
           alt="poto"
           height={200}
@@ -23,8 +23,12 @@ export function Profile() {
           className="rounded-full aspect-square object-cover object-top"
         />
         <div className="flex flex-col justify-center items-center text-center lg:justify-start lg:text-start lg:items-start gap-y-2">
-          <H2>Farrel Amroe Azhari</H2>
-          <H3>Web Developer</H3>
+          <H2>
+            <TypingAnimation originalText="Farrel Amroe Azhari" />
+          </H2>
+          <H3>
+            <TypingAnimation originalText="Web Developer" delay={300} />
+          </H3>
         </div>
       </div>
       <div
@@ -37,13 +41,15 @@ export function Profile() {
             <div
               className="flex flex-col justify-center lg:justify-start lg:text-start gap-y-[5px]"
               key={title}>
-              <H4>{title}:</H4>
+              <H4>
+                <TypingAnimation originalText={`${title}:`} delay={500} />
+              </H4>
               <H5
                 className={`bg-primary-200 text-center rounded-[8px] border-1 py-1 px-3 max-w-[100%] lg:max-w-[75%] ${
                   href == "" ? "" : "hover:font-bold duration-300"
                 }`}>
                 <a href={href} target="blank">
-                  {text}
+                  <TypingAnimation originalText={text} delay={500} />
                 </a>
               </H5>
             </div>

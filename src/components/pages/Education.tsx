@@ -1,4 +1,4 @@
-import { Container, H1, List } from "@/components";
+import { Container, H1, List, TypingAnimation } from "@/components";
 import data from "@/components/data/dataEducation";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -12,7 +12,9 @@ export function Education() {
     <>
       <Container>
         <div data-aos="fade-left" data-aos-duration="1000">
-          <H1>Education</H1>
+          <H1>
+            <TypingAnimation originalText="Education" delay={300} />
+          </H1>
         </div>
         <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
           {data.map(({ title, time, position, achievement }) => {

@@ -1,4 +1,4 @@
-import { Container, H1, List } from "@/components";
+import { Container, H1, List, TypingAnimation } from "@/components";
 import data from "@/components/data/dataOrganisationalExperiences";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -12,7 +12,12 @@ export function Organisation() {
     <>
       <Container>
         <div data-aos="fade-left" data-aos-duration="1000">
-          <H1>Organisational Experiences</H1>
+          <H1>
+            <TypingAnimation
+              originalText="Organisational Experiences"
+              delay={300}
+            />
+          </H1>
         </div>
         <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
           {data.map(({ title, time, position, achievement }) => {

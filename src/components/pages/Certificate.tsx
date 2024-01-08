@@ -1,4 +1,4 @@
-import { Container, H1, H3, H5 } from "@/components";
+import { Container, H1, H3, H5, TypingAnimation } from "@/components";
 import data from "@/components/data/dataCertificate";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -11,7 +11,9 @@ export function Certificate() {
   return (
     <Container>
       <div data-aos="fade-left" data-aos-duration="1000">
-        <H1>Certificates</H1>
+        <H1>
+          <TypingAnimation originalText="Certificates" delay={300} />
+        </H1>
       </div>
       <table className="w-full mt-[16px] border-separate border-spacing-y-6">
         <tr

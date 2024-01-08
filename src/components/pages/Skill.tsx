@@ -1,4 +1,4 @@
-import { Container, H1 } from "@/components";
+import { Container, H1, TypingAnimation } from "@/components";
 import data from "@/components/data/dataSkill";
 import Image from "next/image";
 import "aos/dist/aos.css";
@@ -12,7 +12,9 @@ export function Skill() {
   return (
     <Container>
       <div data-aos="fade-left" data-aos-duration="1000">
-        <H1>Work Experiences</H1>
+        <H1>
+          <TypingAnimation originalText="Skills" delay={300} />
+        </H1>
       </div>
       <div
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-[16px] mt-[16px] items-center"
@@ -21,7 +23,7 @@ export function Skill() {
         data-aos-delay="300">
         {data.map(({ imageUrl }) => {
           return (
-            <Image
+            <img
               key={imageUrl}
               src={imageUrl}
               alt=""

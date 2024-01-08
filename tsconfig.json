@@ -24,6 +24,6 @@
     "src/components/Navbar.jsx",
     "src/components/typography/Text.tsx",
     "src/components/index.tsx"
-  ],
+, "server.js"  ],
   "exclude": ["node_modules"]
 }

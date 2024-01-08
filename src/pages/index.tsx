@@ -31,7 +31,7 @@ export default function Home() {
               <div
                 className="flex flex-row justify-start items-center gap-x-[8px] hover:font-bold duration-300"
                 key="">
-                <Image src={imageUrl} alt="" height={24} width={24} />
+                <img src={imageUrl} alt="" height={24} width={24} />
                 <button onClick={() => setPage(SetPage)} key={text}>
                   <H2
                     className={`text-start ${

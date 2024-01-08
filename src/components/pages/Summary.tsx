@@ -1,6 +1,5 @@
 import Image from "next/image";
-import { Container } from "../template/Container";
-import { H1, H3 } from "@/components";
+import { Container, H1, H3, TypingAnimation } from "@/components";
 import { useEffect } from "react";
 import "aos/dist/aos.css";
 import AOS from "aos";
@@ -14,7 +13,9 @@ export function Summary() {
     <>
       <Container>
         <div data-aos="fade-left" data-aos-duration="1000">
-          <H1>Summary</H1>
+          <H1>
+            <TypingAnimation originalText="Summary" delay={300} />
+          </H1>
         </div>
         <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
           <H3 className="text-justify mt-[16px]">
@@ -31,14 +32,14 @@ export function Summary() {
           data-aos="fade-left"
           data-aos-duration="1000"
           data-aos-delay="600">
-          <Image
+          <img
             src="/images/summary_1.jpeg"
             alt=""
             height={1000}
             width={1000}
             className="aspect-square object-cover object-center max-w-[250px] rounded-[8px] cardSummary1"
           />
-          <Image
+          <img
             src="/images/summary_2.jpeg"
             alt=""
             height={1000}
@@ -46,7 +47,7 @@ export function Summary() {
             className="aspect-square object-cover object-center max-w-[250px] rounded-[8px] cardSummary2"
           />
 
-          <Image
+          <img
             src="/images/summary_3.jpeg"
             alt=""
             height={1000}
