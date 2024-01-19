@@ -26,7 +26,7 @@ const data = [
   },
   {
     SetPage: 5,
-    text: "Portofolio",
+    text: "Project",
     imageUrl: "/images/project-filled.svg",
   },
   {

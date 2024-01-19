@@ -64,7 +64,7 @@ const data = [
           lanjut tentang PPSMB UGM 2023. Posisi saya dalam proyek ini sebagai
           Frontend Developer.
         </H5>
-        <Text size="regular">
+        <Text size="regular" className="font-bold">
           *Note: untuk membuka link diatas, harus menggunakan OpenVPN atau Wifi
           UGM agar bisa mengakses
         </Text>

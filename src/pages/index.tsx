@@ -76,7 +76,7 @@ export default function Home() {
           width="24"
           height="24"
           viewBox="0 0 1024 1024"
-          className={`${open ? "rotate-180" : "rotate-0"} duration-1000`}>
+          className={`${open ? "rotate-180" : "rotate-0"} duration-1000 w-[24px]`}>
           <g transform="rotate(-90 512 512)">
             <path
               fill="#000000"
@@ -93,7 +93,7 @@ export default function Home() {
               <div
                 className="flex flex-row justify-start items-center gap-x-[8px] hover:font-bold duration-300"
                 key="">
-                <Image src={imageUrl} alt="" height={24} width={24} />
+                <img src={imageUrl} alt="" height={24} width={24} />
                 <button onClick={() => setPage(SetPage)} key={text}>
                   <H2
                     className={`text-start ${
