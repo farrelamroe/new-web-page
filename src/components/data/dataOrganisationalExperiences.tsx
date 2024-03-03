@@ -1,7 +1,7 @@
 const data = [
   {
     title: "Himpunan Mahasiswa Ilmu Komputer UGM - Yogyakarta",
-    time: "Sep 2021 - Present",
+    time: "Sep 2021 - Feb 2024",
     position: "Staf Minat dan Bakat",
     achievement: (
       <>
@@ -217,7 +217,7 @@ const data = [
   },
   {
     title: "Komunitas Mahasiswa TIK UGM - Yogyakarta",
-    time: "Feb 2022 - Present",
+    time: "Feb 2022 - Feb 2024",
     position: "Competitive Programming Staff",
     achievement: (
       <>

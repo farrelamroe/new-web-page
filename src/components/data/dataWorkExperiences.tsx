@@ -1,7 +1,7 @@
 const data = [
   {
     title: "Koperasi Mahasiswa UGM - Yogyakarta",
-    time: "Feb 2023 - Present",
+    time: "Feb 2023 - Feb 2024",
     position: "Staf Riset dan Teknologi",
     achievement: (
       <ul className="custom-list-disc">
