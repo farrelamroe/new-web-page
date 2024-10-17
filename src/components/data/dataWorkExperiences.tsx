@@ -46,6 +46,28 @@ const data = [
       </ul>
     ),
   },
+  {
+    title: "Jogjacamp (Idwebhost), Kota Yogyakarta, Daerah Istimewa Yogyakarta",
+    time: "Sep 2024 - Present",
+    position: "Frontend Developer",
+    achievement: (
+      <ul className="custom-list-disc">
+        <li>
+          Bekerja sama dengan 15 orang untuk membuat web chat 
+        </li>
+        <li>
+          Implementasi pembuatan website menggunakan HTML, CSS, Javascript, serta menggunakan  framework Redis dan Elasticsearch
+        </li>
+        <li>
+          Mengoptimalkan tampilan website agar responsif di berbagai perangkat
+          seperti mobile, tablet, dan desktop
+        </li>
+        <li>
+          Berkolaborasi dengan tim menggunakan Rujak dan Taiga selama pembuatan website
+        </li>
+      </ul>
+    ),
+  },
 ];
 
 export default data;
