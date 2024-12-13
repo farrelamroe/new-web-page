@@ -17,11 +17,11 @@ export function Profile() {
         data-aos="fade-left"
         data-aos-duration="1000">
         <img
-          src="/images/Foto Individu_IT_Keamanan_Farrel Amroe Azhari_MIPA 2021.jpg"
+          src="/images/foto.jpg"
           alt="poto"
           height={200}
           width={200}
-          className="rounded-full aspect-square object-cover object-top"
+          className="rounded-full aspect-square object-cover object-center"
         />
         <div className="flex flex-col justify-center items-center text-center lg:justify-start lg:text-start lg:items-start gap-y-2">
           <H2>

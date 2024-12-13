@@ -71,6 +71,22 @@ const data = [
     url: "https://class.buildwithangga.com/talent/farrelamroe/flutter-dart-crash-course-modern-ui-design",
     delay: "1000",
   },
+  {
+    title: "Studi Independen MBKM",
+    path: "Back-End Engineer with Golang",
+    course: "Alterra Academy",
+    year: "2024",
+    url: "https://drive.google.com/file/d/1tsqhBdgblzfM8nGuD2-Ak-SgpNt4Lj-P/view?usp=sharing",
+    delay: "1100",
+  },
+  {
+    title: "Digistral Class",
+    path: "Hacker - Front End",
+    course: "Telkom Indonesia",
+    year: "2024",
+    url: "https://drive.google.com/file/d/1fU6gJLxdjnDBgbbC7Zc_iOAfLRXmVoT4/view?usp=drive_link",
+    delay: "1200",
+  },
 ];
 
 export default data;

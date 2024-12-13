@@ -86,7 +86,7 @@ export default function Home() {
         </svg>
       </button>
       <nav
-        className={`fixed z-[100] h-screen overflow-hidden bg-primary-100 duration-1000 border-r-2 border-secondary-200 font-garamond text-secondary-200 max-w-[25vw] hidden lg:block`}>
+        className={`fixed z-[100] h-screen overflow-hidden bg-primary-100 duration-1000 border-r-2 border-secondary-200 font-garamond text-secondary-200 w-[25vw] hidden lg:block`}>
         <div className="flex flex-col justify-start top-[50%] relative translate-y-[-50%] pl-[32px] gap-y-[16px]">
           {data.map(({ SetPage, text, imageUrl }) => {
             return (

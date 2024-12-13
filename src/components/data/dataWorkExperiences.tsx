@@ -48,12 +48,12 @@ const data = [
   },
   {
     title: "Jogjacamp (Idwebhost), Kota Yogyakarta, Daerah Istimewa Yogyakarta",
-    time: "Sep 2024 - Present",
+    time: "Sep 2024 - Nov 2024",
     position: "Frontend Developer",
     achievement: (
       <ul className="custom-list-disc">
         <li>
-          Bekerja sama dengan 15 orang untuk membuat web chat 
+          Bekerja sama dengan 15 orang untuk membuat fitur chat untuk kebutuhan customer service
         </li>
         <li>
           Implementasi pembuatan website menggunakan HTML, CSS, Javascript, serta menggunakan  framework Redis dan Elasticsearch
