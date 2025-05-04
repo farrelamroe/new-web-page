@@ -1,18 +1,9 @@
 const data = [
   {
     title: "Universitas Gadjah Mada - Indonesia",
-    time: "Aug 2021 - Jul 2025 (Expected)",
-    position: "Bachelor Degree in Computer Science, 3.75/4.00",
-    achievement: (
-      <>
-        <ul className="custom-list-disc">
-          <li>
-            Gold Medal, Best Inclusivity Award, Top 5 Diagnostic Project
-            International Genetically Engineered Machine (IGEM) Competition 2023
-          </li>
-        </ul>
-      </>
-    ),
+    time: "Aug 2021 - Apr 2025",
+    position: "Bachelor Degree in Computer Science, 3.81/4.00",
+    achievement: null,
   },
   {
     title: "SMA Pradita Dirgantara",

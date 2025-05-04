@@ -12,7 +12,7 @@ export function Portofolio() {
     <Container>
       <div data-aos="fade-left" data-aos-duration="1000">
         <H1>
-          <TypingAnimation originalText="Portofolio" delay={300} />
+          <TypingAnimation originalText="Project" delay={300} />
         </H1>
       </div>
       <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">

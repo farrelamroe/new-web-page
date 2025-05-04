@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image";
 import { Container, H2, H3, H4, H5, TypingAnimation } from "@/components";
 import data from "@/components/data/dataProfile";
 import "aos/dist/aos.css";
@@ -37,7 +36,7 @@ export function Profile() {
         data-aos="fade-left"
         data-aos-duration="1000"
         data-aos-delay="300">
-        {data.map(({ title, text, href }) => {
+        {data.map(({ title, text, href }: any) => {
           return (
             <div
               className="flex flex-col justify-center lg:justify-start lg:text-start gap-y-[5px]"

@@ -3,6 +3,70 @@ import { H5, Text } from "@/components";
 
 const data = [
   {
+    title: "Backend Engineer Final Project",
+    repositoryUrl: "https://github.com/OctavianoRyan25/be-agriculture",
+    repositoryText: "Github",
+    children: (
+      <>
+        <H5>
+          This project was created as the final project of Alterra
+          Academy&rsquo;s “Backend Engineer With Golang” Independent Study MBKM.
+          This project contains features that can be used in agriculture such as
+          plant watering schedules, weather forecasts, fertilizers, plants, and
+          others.
+        </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/go.png" alt="" className="max-w-[32px]" />
+        </div>
+      </>
+    ),
+  },
+  {
+    title: "Digistar OCA Blast Telkom",
+    repositoryUrl: "https://github.com/farrelamroe/digistar-oca-blast-2024",
+    repositoryText: "Github",
+    linkUrl: "https://digistar-oca-blast-2024.vercel.app/",
+    linkText: "Link",
+    children: (
+      <>
+        <H5>
+          This project was created as the final project of Digistar Club By
+          Telkom Indonesia. This project contains features that can be used in
+          OCA Blast, especially chatbots.
+        </H5>
+        <Text size="regular" className="font-bold">
+          *Note: To enter the chatbot page, please use route /chatai
+        </Text>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/next.webp" alt="" className="max-w-[32px]" />
+          <img src="/images/tailwind.svg" alt="" className="max-w-[32px]" />
+        </div>
+      </>
+    ),
+  },
+  {
+    title: "Website KKN Pakis 2024",
+    repositoryUrl: "https://github.com/farrelamroe/kkn-pakis",
+    repositoryText: "Github",
+    linkUrl: "https://kkn-pakis-2024.vercel.app/",
+    linkText: "Link",
+    children: (
+      <>
+        <H5>
+          This project was made as one of the work programs in the Pakis 2024
+          Community Service Program (KKN). This website contains work programs
+          that have been carried out during the KKN activity period. Starting
+          from work programs in two villages, Ketundan and Pogalan to work
+          programs from each science, social science, agro, medical cluster.
+        </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/next.webp" alt="" className="max-w-[32px]" />
+          <img src="/images/tailwind.svg" alt="" className="max-w-[32px]" />
+        </div>
+      </>
+    ),
+  },
+  {
     title: "Binar Academy LMS",
     repositoryUrl: null,
     linkUrl: "https://lms.binarian.co/",
@@ -11,10 +75,10 @@ const data = [
     children: (
       <>
         <H5>
-          Web ini merupakan salah satu proyek kelompok pada saat Intern di Binar
-          Academy sebagai Frontend Engineer. Proyek ini membangun Learning
-          Management System (LMS) yang digunakan perusahaan untuk kepentingan
-          belajar mengajar di Binar Academy.
+          This web is one of the group projects during my internship at Binar
+          Academy as a Frontend Engineer. This project builds a Learning
+          Management System (LMS) that is used by companies for teaching and
+          learning purposes at Binar Academy.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/next.webp" alt="" className="max-w-[32px]" />
@@ -35,10 +99,10 @@ const data = [
     children: (
       <>
         <H5>
-          Web ini merupakan salah satu proyek kelompok pada saat Intern di Binar
-          Academy sebagai Frontend Engineer. Proyek ini membangun Content
-          Management System yang digunakan perusahaan untuk kepentingan belajar
-          mengajar di Binar Academy.
+          This web is one of the group projects during my internship at Binar
+          Academy as a Frontend Engineer. This project builds a Content
+          Management System that is used by companies for teaching and learning
+          purposes at Binar Academy.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/vue.png" alt="" className="max-w-[32px]" />
@@ -59,14 +123,14 @@ const data = [
     children: (
       <>
         <H5>
-          Proyek ini merupakan proyek divisi Humpubit PPSMB UGM 2023. Proyek ini
-          membuat website yang digunakan mahasiswa baru untuk mengetahui lebih
-          lanjut tentang PPSMB UGM 2023. Posisi saya dalam proyek ini sebagai
-          Frontend Developer.
+          This project is a project of Humpubit division of PPSMB UGM 2023. This
+          project creates a website that is used by new students to find out
+          more about PPSMB UGM 2023. My position in this project is Software
+          Engineer.
         </H5>
         <Text size="regular" className="font-bold">
-          *Note: untuk membuka link diatas, harus menggunakan OpenVPN atau Wifi
-          UGM agar bisa mengakses
+          *Note: to open the link above, you must use OpenVPN or UGM Wifi to
+          access the link.
         </Text>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/next.webp" alt="" className="max-w-[32px]" />
@@ -88,9 +152,8 @@ const data = [
     children: (
       <>
         <H5>
-          Project ini merupakan project kepanitiaan yang diadakan oleh UGM. Isi
-          dari web ini berupa info seputar Porsenigama 2022. Saya disini sebagai
-          UI/UX Designer.
+          This project is a committee project organized by UGM. The content of
+          this web is info about Porsenigama 2022. I am here as UI/UX Designer.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/react.svg" alt="" className="max-w-[32px]" />
@@ -109,9 +172,9 @@ const data = [
     children: (
       <>
         <H5>
-          Project ini merupakan project kepanitiaan yang diadakan oleh
-          Balairungklass. Isi dari web ini berupa info seputar Blastout 2023.
-          Saya disini sebagai Front-End Developer.
+          This project is a committee project organized by Balairungklass. The
+          content of this web is info about Blastout 2023. I am here as
+          Front-End Developer.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/next.webp" alt="" className="max-w-[32px]" />
@@ -130,11 +193,11 @@ const data = [
     children: (
       <>
         <H5>
-          Project ini merupakan project kepanitiaan yang diadakan oleh Ilmu
-          Komputer. Isi dari web ini berupa info seputar Joints 2023. Project
-          ini lebih kompleks karena banyak menggunakan Back-End untuk
-          pendaftaran sehingga ada fetching antara Front-End dan Back-End. Saya
-          disini sebagai Front-End Developer.
+          This project is a committee project organized by Computer Science. The
+          content of this web is info about Joints 2023. This project is more
+          complex because it uses a lot of Back-End for registration so there is
+          fetching between Front-End and Back-End. I am here as a Front-End
+          Developer.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/next.webp" alt="" className="max-w-[32px]" />
@@ -153,10 +216,10 @@ const data = [
     children: (
       <>
         <H5>
-          Project ini merupakan project individu yang digunakan untuk kompetisi
-          International Genetically Engineered Machine yang diadakan di Paris,
-          Perancis. Dalam kompetisi ini, saya mendapatkan Gold Medal, Best
-          Inclusivity Awards, dan Top 5 Best Diagnostic Project.
+          This project was an individual project used for the International
+          Genetically Engineered Machine competition held in Paris, France. In
+          this competition, I received Gold Medal, Best Inclusivity Awards, and
+          Top 5 Best Diagnostic Project.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/next.webp" alt="" className="max-w-[32px]" />
@@ -174,12 +237,12 @@ const data = [
     children: (
       <>
         <H5>
-          Project ini merupakan tugas untuk seleksi penerimaan anggota Google
-          Developer Student Club 2022. Konsep project ini adalah meng-clone
-          salah satu laman Gojek sebagai syarat dari tugas ini. Partisipasi saya
-          dalam project ini menjadi Front-End developer dimana saya meng-clone
-          design yang sudah disediakan Gojek. Project ini dibuat dalam waktu 4
-          hari.
+          This project is an assignment for the selection of Google Developer
+          Student Club 2022 members. The concept of this project is to clone one
+          of Gojek&rsquo;s pages as a requirement of this assignment. My
+          participation in this project is a Front-End developer where I clone
+          the design that has been provided by Gojek. This project was made
+          within 4 days.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/react.svg" alt="" className="max-w-[32px]" />
@@ -197,11 +260,11 @@ const data = [
     children: (
       <>
         <H5>
-          Project ini merupakan tugas untuk seleksi penerimaan anggota OmahTI
-          divisi Front-end 2022. Konsep project ini adalah slicing design yang
-          sudah disediakan oleh panitia yang menjadi syarat dalam tugas ini.
-          Partisipasi saya dalam project ini menjadi Front-End developer.
-          Project ini dibuat dalam waktu 4 hari.
+          This project is an assignment for the selection of OmahTI members of
+          the 2022 Front-end division. The concept of this project is a slicing
+          design that has been provided by the committee which is a requirement
+          in this task. My participation in this project became a Front-End
+          developer. This project was made within 4 days.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/react.svg" alt="" className="max-w-[32px]" />
@@ -219,9 +282,9 @@ const data = [
     children: (
       <>
         <H5>
-          Project ini merupakan project iseng sekaligus untuk penugasan course
-          dicoding pada kelas front-end. Isi dari project ini adalah biodata
-          diri.
+          This project is a fad project as well as a course assignment for
+          coding the front-end class. The content of this project is a personal
+          bio.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/html.svg" alt="" className="max-w-[32px]" />
@@ -240,10 +303,10 @@ const data = [
     children: (
       <>
         <H5>
-          Project ini merupakan project iseng sekaligus untuk penugasan course
-          dicoding pada kelas front-end. Project ini bisa mencatat judul,
-          penulis, dan tahun terbit buku yang sudah dibaca atau belum. Konsepnya
-          adalah pencatatan buku yang sudah dibaca.
+          This project is a fad project as well as a course assignment coded in
+          the front-end class. This project can record the title, author, and
+          year of publication of books that have been read or not. The concept
+          is to record books that have been read.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/html.svg" alt="" className="max-w-[32px]" />
@@ -262,10 +325,9 @@ const data = [
     children: (
       <>
         <H5>
-          Project hanya iseng saja karena merupakan project kecil saya untuk
-          mengisi waktu luang serta project pertama saya setelah belajar HTML,
-          CSS, javascript. Project ini sederhana, mengkonvert suhu ke satuan
-          yang lain.
+          The project is just a fad because it is my small project to fill my
+          spare time and my first project after learning HTML, CSS, javascript.
+          This project is simple, convert temperature to other units.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/html.svg" alt="" className="max-w-[32px]" />
@@ -284,9 +346,9 @@ const data = [
     children: (
       <>
         <H5>
-          Sama seperti bookshelf yang sebelumnya, namun ini menggunakan
-          back-end. Project ini untuk penugasan course dicoding. Bahasa yang
-          digunakan adalah node.js, menggunakan framework hapi.
+          Just like the previous bookshelf, but this one uses the back-end. This
+          project is for course assignment coding. The language used is node.js,
+          using the hapi framework.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/node.png" alt="" className="max-h-[32px]" />
@@ -300,9 +362,9 @@ const data = [
     children: (
       <>
         <H5>
-          Selain website, saya juga membuat project kecil menggunakan flutter.
-          Design yang saya gunakan menggunakan design project kepanitiaan
-          sebelumnya, seperti Festival Gadjah Mada dan Blasout.
+          In addition to the website, I also created a small project using
+          Flutter. The design I used used the design of previous committee
+          projects, such as the Gadjah Mada Festival and Blasout.
         </H5>
         <div className="flex flex-row gap-x-[8px]">
           <img src="/images/flutter.svg" alt="" className="max-w-[32px]" />

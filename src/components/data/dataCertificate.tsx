@@ -72,7 +72,7 @@ const data = [
     delay: "1000",
   },
   {
-    title: "Studi Independen MBKM",
+    title: "Studi Independen MBKM Backend Engineer With Golang",
     path: "Back-End Engineer with Golang",
     course: "Alterra Academy",
     year: "2024",
@@ -80,7 +80,7 @@ const data = [
     delay: "1100",
   },
   {
-    title: "Digistral Class",
+    title: "Digistar Class (Front End Developer)",
     path: "Hacker - Front End",
     course: "Telkom Indonesia",
     year: "2024",

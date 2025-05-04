@@ -47,6 +47,9 @@ const data = [
   {
     imageUrl: "/images/vue.png",
   },
+  {
+    imageUrl: "/images/go.png",
+  },
 ];
 
 export default data;

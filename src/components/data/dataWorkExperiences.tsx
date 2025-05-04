@@ -2,24 +2,18 @@ const data = [
   {
     title: "Koperasi Mahasiswa UGM - Yogyakarta",
     time: "Feb 2023 - Feb 2024",
-    position: "Staf Riset dan Teknologi",
+    position: "IT Support Technician",
     achievement: (
       <ul className="custom-list-disc">
-        <li>Menerima kritik dan saran terkait permasalahan bidang teknologi</li>
-        <li>Melakukan pemeliharaan website Kopma UGM dan HRIS Kopma UGM</li>
+        <li>Maintain Kopma UGM&rsquo;s website and HRIS</li>
         <li>
-          Mengelola perangkat keras milih Koperasi Mahasiswa UGM seperti PC,
-          printer, dan mesin fotokopi
-        </li>
-        <li>Mengelola domain website Kopma UGM</li>
-        <li>
-          Mengelola lebih dari 100 data pegawai dan pengurus Koperasi Mahasiswa
-          UGM
+          Manage more than 100 data of employees and administrators of UGM
+          Student Cooperatives
         </li>
         <li>
-          Menambah fitur-fitur website dan HRIS menggunakan wordpress, HTML,
-          CSS, dan PHP
+          Adding website and HRIS features using wordpress, HTML, CSS, and PHP
         </li>
+        <li>Managing the existing information system at Kopma UGM</li>
       </ul>
     ),
   },
@@ -29,19 +23,17 @@ const data = [
     position: "Frontend Engineer Intern",
     achievement: (
       <ul className="custom-list-disc">
+        <li>Worked with 15 people to create a web-based LMS and CMS</li>
         <li>
-          Bekerja sama dengan 15 orang untuk membuat LMS dan CMS berbasis web
+          Implementation of website creation using React.js, Vue.js, bootstrap,
+          and SCSS frameworks
         </li>
         <li>
-          Implementasi pembuatan website menggunakan framework React.js, Vue.js,
-          bootstrap, dan SCSS
+          Optimizing website display to be responsive on various devices such as
+          mobile, tablet, and desktop
         </li>
         <li>
-          Mengoptimalkan tampilan website agar responsif di berbagai perangkat
-          seperti mobile, tablet, dan desktop
-        </li>
-        <li>
-          Berkolaborasi dengan tim menggunakan Gitlab selama pembuatan website
+          Collaborating with the team using Gitlab during website creation
         </li>
       </ul>
     ),
@@ -53,18 +45,31 @@ const data = [
     achievement: (
       <ul className="custom-list-disc">
         <li>
-          Bekerja sama dengan 15 orang untuk membuat fitur chat untuk kebutuhan customer service
+          Developing Chatonomy platform for Jogjacamp&rsquo;s customer service needs
         </li>
         <li>
-          Implementasi pembuatan website menggunakan HTML, CSS, Javascript, serta menggunakan  framework Redis dan Elasticsearch
+          Implementasi pembuatan website menggunakan HTML, CSS, Javascript,
+          serta menggunakan framework Redis dan Elasticsearch
         </li>
         <li>
           Mengoptimalkan tampilan website agar responsif di berbagai perangkat
           seperti mobile, tablet, dan desktop
         </li>
         <li>
-          Berkolaborasi dengan tim menggunakan Rujak dan Taiga selama pembuatan website
+          Berkolaborasi dengan tim menggunakan Rujak dan Taiga selama pembuatan
+          website
         </li>
+      </ul>
+    ),
+  },
+  {
+    title: "Direktorat Pendidikan dan Pengajaran UGM - Sleman",
+    time: "Jan 2025 - Present",
+    position:
+      "Graphic Design and Data Analyst (Part Time)",
+    achievement: (
+      <ul className="custom-list-disc">
+        <li>Belum ada kegiatan</li>
       </ul>
     ),
   },

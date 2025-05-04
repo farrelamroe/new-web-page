@@ -2,7 +2,7 @@ const data = [
   {
     title: "Full Name",
     text: "Farrel Amroe Azhari",
-    href: "",
+    href: null,
   },
   {
     title: "Email Address",
@@ -12,7 +12,7 @@ const data = [
   {
     title: "Location",
     text: "Surakarta City, Central Java, Indonesia",
-    href: "",
+    href: null,
   },
   {
     title: "LinkedIn",
@@ -32,12 +32,12 @@ const data = [
   {
     title: "CV",
     text: "download",
-    href: "https://drive.google.com/file/d/1Gs4CwGjSEJBUFQF4Lm1OMFdSFv7a4G5T/view?usp=sharing",
+    href: "https://drive.google.com/drive/folders/1afojo8lVwBJ7afrvhW5xRWWb-bPfB7oV?usp=sharing",
   },
   {
     title: "Portofolio",
     text: "download",
-    href: "https://drive.google.com/drive/u/0/my-drive",
+    href: "https://drive.google.com/drive/folders/1afojo8lVwBJ7afrvhW5xRWWb-bPfB7oV?usp=sharing",
   },
 ];
 export default data;
