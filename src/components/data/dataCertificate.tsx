@@ -5,7 +5,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/JMZVG4GVOZN9",
-    delay: "200",
+    delay: null,
   },
   {
     title: "Memulai Pemrograman Dengan Python",
@@ -13,7 +13,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/4EXG57L7GXRL",
-    delay: "300",
+    delay: null,
   },
   {
     title: "Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)",
@@ -21,7 +21,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/QLZ9K1Y57Z5D",
-    delay: "400",
+    delay: null,
   },
   {
     title: "Belajar Dasar Pemrograman JavaScript",
@@ -29,7 +29,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/KEXLGG9YMZG2",
-    delay: "500",
+    delay: null,
   },
   {
     title: "Belajar Membuat Aplikasi Back-End untuk Pemula",
@@ -37,7 +37,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/98XWR46DWZM3",
-    delay: "600",
+    delay: null,
   },
   {
     title: "Belajar Dasar Pemrograman Web",
@@ -45,7 +45,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/2VX31YQE4ZYQ",
-    delay: "700",
+    delay: null,
   },
   {
     title: "Belajar Membuat Front-End Web untuk Pemula",
@@ -53,7 +53,7 @@ const data = [
     course: "Dicoding",
     year: "2022",
     url: "https://www.dicoding.com/certificates/4EXG5751QXRL",
-    delay: "800",
+    delay: null,
   },
   {
     title: "Memulai Pemrograman dengan Dart",
@@ -61,7 +61,7 @@ const data = [
     course: "Dicoding",
     year: "2023",
     url: "https://www.dicoding.com/certificates/98XWV0039PM3",
-    delay: "900",
+    delay: null,
   },
   {
     title: "7 Days of Code: Mastering Flutter User-Interface Design",
@@ -69,7 +69,7 @@ const data = [
     course: "Build With Angga",
     year: "2023",
     url: "https://class.buildwithangga.com/talent/farrelamroe/flutter-dart-crash-course-modern-ui-design",
-    delay: "1000",
+    delay: null,
   },
   {
     title: "Studi Independen MBKM Backend Engineer With Golang",
@@ -77,7 +77,7 @@ const data = [
     course: "Alterra Academy",
     year: "2024",
     url: "https://drive.google.com/file/d/1tsqhBdgblzfM8nGuD2-Ak-SgpNt4Lj-P/view?usp=sharing",
-    delay: "1100",
+    delay: null,
   },
   {
     title: "Digistar Class (Front End Developer)",
@@ -85,7 +85,23 @@ const data = [
     course: "Telkom Indonesia",
     year: "2024",
     url: "https://drive.google.com/file/d/1fU6gJLxdjnDBgbbC7Zc_iOAfLRXmVoT4/view?usp=drive_link",
-    delay: "1200",
+    delay: null,
+  },
+  {
+    title: "LLM-Based Tools and Gemini API Integration for Data Scientists",
+    path: "AI and Data Scientist",
+    course: "Hacktiv8",
+    year: "2025",
+    url: "https://drive.google.com/file/d/1_Mp0tW-1B9ohns7aubLSXXN05fk6K4Zk/view?usp=drive_link",
+    delay: null,
+  },
+  {
+    title: "AI Productivity and AI API Integration for Developers",
+    path: "AI and Web Development",
+    course: "Hacktiv8",
+    year: "2025",
+    url: "#",
+    delay: null,
   },
 ];
 

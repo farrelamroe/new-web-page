@@ -20,12 +20,12 @@ export function Summary() {
         </div>
         <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
           <H3 className="text-justify mt-[16px]">
-            I am a Computer Science student at Universitas Gadjah Mada, with a
-            strong background in Software Engineering and Data. Throughout my
+            I am a graduate of Computer Science at Universitas Gadjah Mada, with
+            a strong background in Software Engineering and Data. Throughout my
             journey, I have built valuable experience working in the education
             management industry, where I honed my skills and deepened my passion
             for continuous learning. Beyond my academic interests, I am excited
-            by opportunities that allow me to grow in AI an Machine Learning. I
+            by opportunities that allow me to grow in AI and Machine Learning. I
             believe in making a positive impact through both knowledge-sharing
             and collaboration, always striving to bring excellence into every
             project I take on.

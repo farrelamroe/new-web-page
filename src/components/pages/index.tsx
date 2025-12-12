@@ -6,3 +6,4 @@ export * from "./Summary";
 export * from "./Certificate";
 export * from "./Portofolio";
 export * from "./Skill";
+export * from "./Volunteering";

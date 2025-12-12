@@ -10,6 +10,7 @@ import {
   Certificate,
   Portofolio,
   Skill,
+  Volunteering
 } from "@/components";
 import data from "@/components/data/dataNavbar";
 import Image from "next/image";
@@ -45,7 +46,7 @@ export default function Home() {
             );
           })}
         </div>
-        <img
+        {/* <img
           src="/images/heart.svg"
           className="absolute right-2 bottom-2 w-[64px] heart"
           alt=""
@@ -64,7 +65,7 @@ export default function Home() {
           src="/images/suit-spade-fill.svg"
           className="absolute right-2 top-2 w-[64px] spade"
           alt=""
-        />
+        /> */}
       </nav>
       <button
         onClick={() => setOpen((prev) => !prev)}
@@ -106,7 +107,7 @@ export default function Home() {
             );
           })}
         </div>
-        <img
+        {/* <img
           src="/images/heart.svg"
           className="absolute right-2 bottom-2 w-[64px] heart"
           alt=""
@@ -125,7 +126,7 @@ export default function Home() {
           src="/images/suit-spade-fill.svg"
           className="absolute right-2 top-2 w-[64px] spade"
           alt=""
-        />
+        /> */}
       </nav>
       <main className={`w-[100vw] lg:w-[75vw] absolute right-0 duration-1000`}>
         {page === 0 && <Profile />}
@@ -133,9 +134,10 @@ export default function Home() {
         {page === 2 && <Education />}
         {page === 3 && <Work />}
         {page === 4 && <Organisation />}
-        {page === 5 && <Portofolio />}
-        {page === 6 && <Certificate />}
-        {page === 7 && <Skill />}
+        {page === 5 && <Volunteering />}
+        {page === 6 && <Portofolio />}
+        {page === 7 && <Certificate />}
+        {page === 8 && <Skill />}
       </main>
     </>
   );

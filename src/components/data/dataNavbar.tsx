@@ -21,21 +21,26 @@ const data = [
   },
   {
     SetPage: 4,
-    text: "Organisational Experiences",
+    text: "Organization",
     imageUrl: "/images/organization-solid.svg",
   },
   {
     SetPage: 5,
+    text: "Volunteering",
+    imageUrl: "/images/organization-solid.svg",
+  },
+  {
+    SetPage: 6,
     text: "Project",
     imageUrl: "/images/project-filled.svg",
   },
   {
-    SetPage: 6,
+    SetPage: 7,
     text: "Certificates",
     imageUrl: "/images/certificate-32-filled.svg",
   },
   {
-    SetPage: 7,
+    SetPage: 8,
     text: "Skills",
     imageUrl: "/images/skill-level-advanced.svg",
   },

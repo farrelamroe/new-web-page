@@ -3,6 +3,102 @@ import { H5, Text } from "@/components";
 
 const data = [
   {
+    title: "AI Productivity and AI API Integration for Developers - Chatbot",
+    repositoryUrl: null,
+    repositoryText: null,
+    children: (
+      <>
+        <H5>
+          Multimodal AI Chatbot (Groq & Llama Vision) Developed a full-stack AI
+          chatbot application capable of processing both text and image inputs
+          by integrating the Groq API with an Express.js backend. The system
+          implements dynamic model switching, utilizing llama-3.3-70b-versatile
+          for high-performance text generation and llama-3.2-11b-vision-preview
+          for analyzing uploaded images. The frontend was built using vanilla
+          JavaScript, HTML, and CSS, featuring a clean chat interface that
+          supports file uploads and renders Markdown responses in real-time.
+          <ul className="custom-list-disc">
+            <li>Backend: Node.js, Express.js, Multer (Memory Storage).</li>
+            <li>
+              AI & LLM: Groq SDK, Llama 3.3 (Text), Llama 3.2 Vision
+              (Multimodal).
+            </li>
+            <li>
+              Frontend: HTML5, CSS3, JavaScript, Marked.js (Markdown Parsing).
+            </li>
+            <li>Environment: dotenv for API key management.</li>
+          </ul>
+        </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/html.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/css.png" alt="" className="max-w-[32px]" />
+          <img src="/images/javascript.svg" alt="" className="max-w-[32px]" />
+          <img src="/images/node.png" alt="" className="max-w-[48px]" />
+          <img src="/images/groq.png" alt="" className="max-w-[32px]" />
+        </div>
+      </>
+    ),
+  },
+  {
+    title:
+      "LLM-Based Tools and Gemini API Integration for Data Scientists - Dapur Genius",
+    repositoryUrl: "https://github.com/farrelamroe/dapur-genius",
+    repositoryText: "Github",
+    children: (
+      <>
+        <H5>
+          DapurGenius: AI-Powered Zero-Waste Cooking Assistant Developed
+          DapurGenius, an interactive AI culinary assistant designed to promote
+          zero-waste cooking by generating creative recipes based on
+          user-provided leftover ingredients. The application was built using
+          Python and Streamlit for a responsive user interface, utilizing
+          LangChain to orchestrate conversational flows. It leverages the Groq
+          API (specifically the llama-3.3-70b-versatile model) to ensure
+          high-speed, low-latency inference, allowing users to customize recipes
+          by difficulty level and available cooking time through an engaging AI
+          chef persona. Tech Stack & Key Competencies:
+          <ul className="custom-list-disc">
+            <li>Languages & Frameworks: Python, Streamlit.</li>
+            <li>
+              AI & LLM: LangChain (Core & Community), Groq API, Llama 3.3.
+            </li>
+            <li>Environment Management: python-dotenv.</li>
+          </ul>
+        </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/python.png" alt="" className="max-w-[32px]" />
+          <img src="/images/streamlit.png" alt="" className="max-w-[128px]" />
+          <img src="/images/langchain.png" alt="" className="max-w-[32px]" />
+          <img src="/images/groq.png" alt="" className="max-w-[64px]" />
+        </div>
+      </>
+    ),
+  },
+  {
+    title: "Undergraduate Thesis",
+    repositoryUrl: null,
+    repositoryText: null,
+    children: (
+      <>
+        <H5>
+          Fake News Detection System using Deep Learning (BiLSTM & BiGRU)
+          Developed an automated fake news detection system for Indonesian news
+          articles using Deep Learning algorithms, specifically implementing and
+          comparing Bidirectional LSTM (BiLSTM) and Bidirectional GRU (BiGRU)
+          architectures. The project utilized Python (TensorFlow, Keras,
+          Scikit-learn) for model development and TF-IDF for textual feature
+          extraction. The study adopted a weakly supervised learning approach,
+          resulting in the BiLSTM model achieving the highest performance with
+          78% accuracy and 0.85 precision, successfully outperforming
+          traditional SVM baselines in capturing complex linguistic patterns.
+        </H5>
+        <div className="flex flex-row gap-x-[8px]">
+          <img src="/images/python.png" alt="" className="max-w-[32px]" />
+        </div>
+      </>
+    ),
+  },
+  {
     title: "Backend Engineer Final Project",
     repositoryUrl: "https://github.com/OctavianoRyan25/be-agriculture",
     repositoryText: "Github",

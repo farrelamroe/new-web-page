@@ -10,7 +10,7 @@ export function Certificate() {
   });
   return (
     <Container>
-      <div data-aos="fade-left" data-aos-duration="1000">
+      <div>
         <H1>
           <TypingAnimation originalText="Certificates" delay={300} />
         </H1>
@@ -35,10 +35,7 @@ export function Certificate() {
           return (
             <tr
               className="text-center border-2 border-secondary-200"
-              key={title}
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay={delay}>
+              key={title}>
               <td className="max-w-[10vw] items-center text-start">
                 <H5>{title}</H5>
               </td>
