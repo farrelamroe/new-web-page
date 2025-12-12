@@ -4,8 +4,8 @@ import { H5, Text } from "@/components";
 const data = [
   {
     title: "AI Productivity and AI API Integration for Developers - Chatbot",
-    repositoryUrl: null,
-    repositoryText: null,
+    repositoryUrl: "https://github.com/farrelamroe/gemini-ai-api-project",
+    repositoryText: "Github",
     children: (
       <>
         <H5>
