@@ -6,8 +6,9 @@ const data = [
     achievement: (
       <ul className="custom-list-disc">
         <li>
-          Maintenance, updating, and providing ideas for new features on the
-          company dashboard related to brokers and LP using Python (streamlit)
+          Developed and maintained a real-time monitoring dashboard for brokers
+          and LP using Python (Streamlit), enabling the data team to track
+          performance metrics efficiently.
         </li>
         <li>
           Leading and supervising the Data Monitoring and Automation team in
@@ -15,8 +16,8 @@ const data = [
           company&rsquo;s system efficiency
         </li>
         <li>
-          Providing ideas and innovations for the copytrading system, server,
-          and automation to the data team
+          Proposed and implemented optimization strategies for the copytrading
+          server, reducing latency by 60% and improving system reliability.
         </li>
         <li>
           Conducting trading strategy analysis in accordance with trader
@@ -50,10 +51,6 @@ const data = [
           educational programs and strategic initiatives through integrated
           technical, data, and design solutions.
         </li>
-        <li>
-          MDocument official Directorate events (e.g., seminars, workshops, and
-          public lectures) through photography as an additional responsibility.
-        </li>
       </ul>
     ),
   },
@@ -64,9 +61,8 @@ const data = [
     achievement: (
       <ul className="custom-list-disc">
         <li>
-          Developed and implemented responsive user interface (UI) components
-          for the Chatonomy project, utilizing AngularJS and Bootstrap as
-          primary technologies.
+          Enhanced user engagement by developing responsive UI components for
+          the Chatonomy project using AngularJS.
         </li>
         <li>
           Built a core feature module for a customer service (CS) rating and

@@ -32,7 +32,7 @@ const data = [
   {
     title: "CV",
     text: "download",
-    href: "https://drive.google.com/file/d/1ftlJN2qVy5OVD5OvFT23MEEMzEvSl19S/view?usp=sharing",
+    href: "https://drive.google.com/file/d/1mp_1xoAud__fhaJBHaY4VHA3Ym45h7XQ/view?usp=sharing",
   },
   {
     title: "Portofolio",
