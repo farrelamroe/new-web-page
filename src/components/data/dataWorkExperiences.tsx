@@ -1,7 +1,7 @@
 const data = [
   {
     title: "Turnkey Inside - Remote",
-    time: "Jun 2025 - Present",
+    time: "Jun 2025 - Dec 2025",
     position: "Data Monitoring and Automation Supervisor",
     achievement: (
       <ul className="custom-list-disc">
