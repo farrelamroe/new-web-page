@@ -100,7 +100,15 @@ const data = [
     path: "AI and Web Development",
     course: "Hacktiv8",
     year: "2025",
-    url: "#",
+    url: "https://drive.google.com/file/d/1EFYjsv13sj6l0hWUn_IG-2Y4gp_yrgir/view?usp=sharing",
+    delay: null,
+  },
+  {
+    title: "AWS re/Start Program Batch 13",
+    path: "AWS",
+    course: "Orbit Future Academy",
+    year: "2025",
+    url: "https://drive.google.com/file/d/1BayH_djNVAh0zlr4lyf3PqmD9Qgc8O57/view?usp=drive_link",
     delay: null,
   },
 ];
