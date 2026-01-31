@@ -7,24 +7,24 @@ const data = [
       <>
         <ul className="custom-list-disc">
           <li>
-            Collaborated within a 3-person engineering team to design, develop,
-            and deploy the official project website for the iGEM UGM
-            competition.
+            Maintained and optimized the corporate WordPress-based website and
+            all on-premise network infrastructure to ensure 99.9% system uptime
+            for daily business operations.
           </li>
           <li>
-            Built the primary user interface using Next.js and Tailwind CSS to
-            effectively showcase and explain the team&rsquo;s research findings
-            and project outcomes.
+            Administered and secured the Human Resource Information System
+            (HRIS), safeguarding data integrity for 100+ employees and
+            administrators through regular audits and system updates.
           </li>
           <li>
-            Implemented a fully responsive design, optimizing the
-            website&rsquo;s layout and user experience for seamless viewing on
-            mobile, tablet, and desktop devices.
+            Engineered and integrated a custom employee leave application module
+            for the HRIS using PHP, HTML, and CSS, effectively automating manual
+            workflows and reducing administrative overhead.
           </li>
           <li>
-            Liaised directly with the Lab and Human Practices teams to translate
-            complex scientific data into clear web content, utilizing GitHub and
-            Gitlab for version control and collaborative development.
+            Ensured seamless operational continuity by proactively managing
+            critical information systems and providing technical support for
+            complex cooperative workflows.
           </li>
         </ul>
       </>
@@ -129,28 +129,30 @@ const data = [
       <>
         <ul className="custom-list-disc">
           <li>
-            Contributed to a 15-person technical team to build and launch
-            multiple event websites (Techtalk, Jointscamp, and the main
-            Competition platform).
+            Collaborated within a 15-person engineering team to architect and
+            launch multiple high-traffic event websites, including Techtalk,
+            Jointscamp, and the primary JOINTS competition platform.
           </li>
           <li>
-            Developed the primary competition website&rsquo;s UI using Next.js
-            and Tailwind CSS, implementing features for event information and
-            user interaction.
+            Engineered a high-performance user interface for the main
+            competition site using Next.js and Tailwind CSS, focusing on
+            seamless event navigation and interactive user features.
           </li>
           <li>
-            Engineered the complete authentication and registration system,
-            successfully managing secure access and data for 500+ participants
-            and administrators.
+            Spearheaded the end-to-end development of a secure authentication
+            and registration system, successfully managing data and access for
+            500+ participants and administrators.
           </li>
           <li>
-            Built specialized platforms for core competition events, including
-            custom interfaces for Competitive Programming (CP) and Capture The
-            Flag (CTF).
+            Architected specialized competition modules, including
+            custom-tailored interfaces for Competitive Programming (CP) and
+            Capture The Flag (CTF) events, to ensure a specialized user
+            experience.
           </li>
           <li>
-            Managed complex application state and handled asynchronous API
-            integrations for user and competition data using Redux.
+            Streamlined application performance and data flow by integrating
+            Redux to manage complex asynchronous API interactions and real-time
+            competition data.
           </li>
         </ul>
       </>
@@ -164,29 +166,30 @@ const data = [
       <>
         <ul className="custom-list-disc">
           <li>
-            Collaborated with cross-functional teams (events, design, PR) to
-            develop the official PPSMB website, serving as the primary
-            information source for 9,500+ new UGM students.
+            Orchestrated the end-to-end development of the official PPSMB
+            website in collaboration with cross-functional teams, successfully
+            serving as the centralized information hub for 9,500+ concurrent
+            student users
           </li>
           <li>
-            Built the entire platform using Next.js and Tailwind CSS,
-            implementing reusable code, a fully responsive design, and managing
-            collaboration via GitHub.
+            Architected a scalable web platform using Next.js and Tailwind CSS,
+            implementing a modular and reusable codebase that ensured 100%
+            responsiveness and streamlined team collaboration via GitHub.
           </li>
           <li>
-            Engineered the core information architecture, including modules for
-            event schedules, student club (UKM) listings, faculty information, a
-            news portal (Palapedia), and an FAQ.
+            Designed and engineered a complex information architecture,
+            integrating high-traffic modules for event scheduling, student club
+            (UKM) directories, and a real-time news portal (Palapedia).
           </li>
           <li>
-            Pioneered an Augmented Reality (AR) feature using Three.js to
-            provide an immersive, interactive experience for students to explore
-            faculty profiles.
+            Pioneered an immersive Augmented Reality (AR) feature using
+            Three.js, enabling thousands of students to interactively explore
+            faculty profiles through cutting-edge web technology.
           </li>
           <li>
-            Developed key interactive features to drive engagement, including a
-            &ldquo;Find Your Group&rdquo; (gugus) function (based on Student ID/NIM) and an
-            educational game profiling UGM figures.
+            Boosted student engagement by developing interactive tools,
+            including a student-ID-based group locator and a gamified experience
+            profiling key university figures.
           </li>
         </ul>
       </>

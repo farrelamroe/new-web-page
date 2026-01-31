@@ -6,26 +6,30 @@ const data = [
     achievement: (
       <ul className="custom-list-disc">
         <li>
-          Developed and maintained a real-time monitoring dashboard for brokers
-          and LP using Python (Streamlit), enabling the data team to track
-          performance metrics efficiently.
+          Architected a real-time monitoring dashboard for brokers and Liquidity
+          Providers (LP) using Python (Streamlit), which streamlined performance
+          tracking and enabled the data team to make faster, data-driven
+          decisions.
         </li>
         <li>
-          Leading and supervising the Data Monitoring and Automation team in
-          creating a copy trading system automation that improves the
-          company&rsquo;s system efficiency
+          Orchestrated a Data Monitoring team to automate copy-trading systems,
+          successfully eliminating manual tracking errors and significantly
+          boosting overall system operational efficiency.
         </li>
         <li>
-          Proposed and implemented optimization strategies for the copytrading
-          server, reducing latency by 60% and improving system reliability.
+          Analyzed and formulated trading strategies based on trader psychology,
+          providing the company with high-probability execution plans for
+          optimized market entry.
         </li>
         <li>
-          Conducting trading strategy analysis in accordance with trader
-          psychology to decide on a trading strategy for the company.
+          Engineered server-side infrastructure optimizations that slashed
+          copy-trading latency by 60%, drastically improving system reliability
+          and performance during high-frequency trading periods.
         </li>
         <li>
-          Collaborate with the team in developing Copy Engine and analyzing data
-          using Python and SQL
+          Co-developed a proprietary Copy Engine and performed deep-dive data
+          analysis using Python and SQL to identify growth opportunities and
+          refine automated trade execution.
         </li>
       </ul>
     ),
@@ -37,19 +41,20 @@ const data = [
     achievement: (
       <ul className="custom-list-disc">
         <li>
-          Manage, process, and analyze academic and student data, ensuring data
-          integrity and preparing regular reports for internal and
-          university-level stakeholders.
+          Optimized academic and student data processing workflows to ensure
+          100% data integrity, providing university-level stakeholders with
+          precise analytical reports for strategic decision-making.
         </li>
         <li>
-          Design and produce engaging visual content (digital and print) for the
-          Directorate&rsquo;s publications, official website, social media, and
-          academic events.
+          Revitalized the Directorate's digital presence by designing
+          high-impact visual content, enhancing brand consistency and engagement
+          across official publications, social media, and academic events.
         </li>
         <li>
-          Collaborate with academic and administrative staff to support
-          educational programs and strategic initiatives through integrated
-          technical, data, and design solutions.
+          Partnered with cross-functional administrative teams to deliver
+          integrated technical and design solutions, directly supporting the
+          successful execution of strategic educational programs and
+          initiatives.
         </li>
       </ul>
     ),
@@ -61,28 +66,29 @@ const data = [
     achievement: (
       <ul className="custom-list-disc">
         <li>
-          Enhanced user engagement by developing responsive UI components for
-          the Chatonomy project using AngularJS.
+          Architected responsive UI components for the Chatonomy project using
+          AngularJS, significantly boosting user engagement through intuitive
+          and high-performance interface design.
         </li>
         <li>
-          Built a core feature module for a customer service (CS) rating and
-          performance assessment system, enabling clients to provide direct
-          feedback on interactions.
+          Engineered a core module for a Customer Service (CS) rating and
+          performance system, streamlining the feedback loop and enabling
+          real-time client interaction assessments.
         </li>
         <li>
-          Designed and implemented the frontend logic for an automated CS bonus
-          calculation system, integrating metrics from user ratings and total
-          client interaction time.
+          Automated the CS bonus calculation system by integrating real-time
+          performance metrics, effectively eliminating manual accounting errors
+          and accelerating data processing for payroll.
         </li>
         <li>
-          Interfaced with backend APIs to fetch, manipulate, and display data
-          managed by Elasticsearch (for analytics and logs) and Redis (for
-          real-time data and caching).
+          Integrated complex backend APIs with Elasticsearch and Redis,
+          optimizing data retrieval and real-time caching for high-performance
+          analytics and log management.
         </li>
         <li>
-          Collaborated with senior developers to translate business requirements
-          and design mockups into functional, high- performance web application
-          features.
+          Synthesized business requirements and design mockups into
+          production-ready features, partnering with senior developers to ensure
+          a scalable and high-performance frontend architecture.
         </li>
       </ul>
     ),
@@ -94,29 +100,29 @@ const data = [
     achievement: (
       <ul className="custom-list-disc">
         <li>
-          Contributed to a 15-person development team to build, enhance, and
-          maintain features for web-based Learning Management (LMS) and Content
-          Management (CMS) platforms.
+          Accelerated the delivery and scaling of features for web-based
+          Learning Management (LMS) and Content Management (CMS) platforms
+          within a 15-person Agile development team.
         </li>
         <li>
-          Developed new application pages and integrated RESTful APIs to fetch,
-          display, and manage dynamic content, utilizing both React.js and
-          Vue.js frameworks.
+          Engineered dynamic application pages by integrating RESTful APIs,
+          demonstrating technical versatility in managing content across both
+          React.js and Vue.js frameworks.
         </li>
         <li>
-          Adjusted, refactored, and styled existing UI components across the LMS
-          and CMS using Bootstrap and custom SCSS to improve user experience and
-          visual consistency.
+          Refactored and modernized legacy UI components using Bootstrap and
+          custom SCSS, significantly improving visual consistency and elevating
+          the overall user experience (UX).
         </li>
         <li>
-          Ensured all new features and UI adjustments were fully responsive,
-          optimizing website display and functionality across mobile, tablet,
-          and desktop devices.
+          Optimized cross-device performance and accessibility, ensuring all new
+          features maintained 100% responsiveness and full functionality across
+          mobile, tablet, and desktop devices.
         </li>
         <li>
-          Utilized Gitlab for version control, managing code merges, and
-          collaborating effectively with team members throughout the development
-          lifecycle.
+          Maintained code integrity and streamlined collaborative workflows
+          using GitLab, effectively managing version control and complex code
+          merges throughout the full development lifecycle.
         </li>
       </ul>
     ),

@@ -20,21 +20,26 @@ export function Summary() {
         </div>
         <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="300">
           <H3 className="text-justify mt-[16px]">
-            Computer Science graduate from Universitas Gadjah Mada with a strong
-            foundation in Software Engineering and Data Science. Proven track
-            record in developing high-performance web applications using Next.js
-            and React.js, with recent professional experience leading Data
-            Monitoring and Automation teams using Python. Skilled in integrating
-            AI models (BiLSTM/BiGRU) and LLM-based tools into practical
-            solutions. An international Gold Medalist (iGEM) committed to
-            leveraging technology for data-driven innovation.
+            Computer Science graduate from Universitas Gadjah Mada with a proven
+            track record in Software Engineering and Data Science. Spearheaded
+            the Data Monitoring and Automation team, where I engineered server
+            optimizations that slashed latency by 60%. Developed strong
+            leadership and analytical problem-solving skills by delivering
+            high-traffic platforms for 9,500+ users and securing multiple
+            International Gold Medals (iGEM). Expert in building scalable
+            applications with Next.js, React.js, Golang, and Python, and
+            integrating advanced AI models (BiLSTM/BiGRU) and Gemini LLM APIs to
+            solve complex technical challenges. Eager to leverage these
+            technical competencies and a data-driven mindset to accelerate
+            innovation and operational excellence.
           </H3>
         </div>
         <div
           className="flex flex-row justify-center items-center mt-[56px] gap-[16px] flex-wrap"
           data-aos="fade-left"
           data-aos-duration="1000"
-          data-aos-delay="600">
+          data-aos-delay="600"
+        >
           <img
             src="/images/summary_1.jpeg"
             alt=""
