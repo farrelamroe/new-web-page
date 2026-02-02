@@ -46,7 +46,7 @@ const data = [
           precise analytical reports for strategic decision-making.
         </li>
         <li>
-          Revitalized the Directorate's digital presence by designing
+          Revitalized the Directorate&apos;s digital presence by designing
           high-impact visual content, enhancing brand consistency and engagement
           across official publications, social media, and academic events.
         </li>
