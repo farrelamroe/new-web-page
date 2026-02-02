@@ -111,6 +111,14 @@ const data = [
     url: "https://drive.google.com/file/d/1BayH_djNVAh0zlr4lyf3PqmD9Qgc8O57/view?usp=drive_link",
     delay: null,
   },
+  {
+    title: "English Proficiency Online Test",
+    path: "English Test",
+    course: "Yureka Education Center",
+    year: "2026",
+    url: "https://drive.google.com/file/d/1RjxjqV-Q27DxA_fZsq1a9s4cfL1GsYxE/view?usp=sharing",
+    delay: null,
+  },
 ];
 
 export default data;
