@@ -7,24 +7,24 @@ const data = [
       <>
         <ul className="custom-list-disc">
           <li>
-            Maintained and optimized the corporate WordPress-based website and
-            all on-premise network infrastructure to ensure 99.9% system uptime
-            for daily business operations.
+            Engineered and deployed the official international competition
+            website within a 3-person engineering team, contributing to the
+            team&rsquo;s success in securing an International Gold Medal.
           </li>
           <li>
-            Administered and secured the Human Resource Information System
-            (HRIS), safeguarding data integrity for 100+ employees and
-            administrators through regular audits and system updates.
+            Architected a high-performance user interface using Next.js and
+            Tailwind CSS to effectively visualize complex synthetic biology
+            research findings for global stakeholders.
           </li>
           <li>
-            Engineered and integrated a custom employee leave application module
-            for the HRIS using PHP, HTML, and CSS, effectively automating manual
-            workflows and reducing administrative overhead.
+            Optimized cross-platform accessibility by implementing a fully
+            responsive design, ensuring a seamless and consistent user
+            experience across all device types.
           </li>
           <li>
-            Ensured seamless operational continuity by proactively managing
-            critical information systems and providing technical support for
-            complex cooperative workflows.
+            Synthesized intricate scientific data from Lab and Human Practices
+            teams into intuitive web content, streamlining the development
+            lifecycle through GitHub and GitLab version control.
           </li>
         </ul>
       </>
