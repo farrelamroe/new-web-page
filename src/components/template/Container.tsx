@@ -6,7 +6,8 @@ export function Container(props: any) {
       style={{
         backgroundImage: `url("/images/background-profile.jpeg")`,
         backgroundSize: "cover",
-      }}>
+      }}
+    >
       {children}
     </main>
   );

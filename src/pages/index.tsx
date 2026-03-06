@@ -10,7 +10,7 @@ import {
   Certificate,
   Portofolio,
   Skill,
-  Volunteering
+  Volunteering,
 } from "@/components";
 import data from "@/components/data/dataNavbar";
 import Image from "next/image";
@@ -26,19 +26,22 @@ export default function Home() {
       <nav
         className={`fixed z-[110] h-screen overflow-hidden bg-primary-100 duration-1000 border-r-2 border-secondary-200 font-garamond text-secondary-200 ${
           open ? "w-[75vw]" : "w-0"
-        } block lg:hidden`}>
+        } block lg:hidden`}
+      >
         <div className="flex flex-col justify-start top-[50%] relative translate-y-[-50%] pl-[32px] gap-y-[16px]">
           {data.map(({ SetPage, text, imageUrl }) => {
             return (
               <div
                 className="flex flex-row justify-start items-center gap-x-[8px] hover:font-bold duration-300"
-                key="">
+                key=""
+              >
                 <img src={imageUrl} alt="" height={24} width={24} />
                 <button onClick={() => setPage(SetPage)} key={text}>
                   <H2
                     className={`text-start ${
                       page === SetPage ? "font-bold" : ""
-                    }`}>
+                    }`}
+                  >
                     {text}
                   </H2>
                 </button>
@@ -71,13 +74,15 @@ export default function Home() {
         onClick={() => setOpen((prev) => !prev)}
         className={`${
           open ? "left-[75%]" : "left-0"
-        } absolute z-[120] duration-1000 top-[50%] bg-secondary-200 py-[8px] rounded-tr-[8px] rounded-br-[8px] translate-y-[-50%] lg:hidden`}>
+        } absolute z-[120] duration-1000 top-[50%] bg-secondary-200 py-[8px] rounded-tr-[8px] rounded-br-[8px] translate-y-[-50%] lg:hidden`}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
           height="24"
           viewBox="0 0 1024 1024"
-          className={`${open ? "rotate-180" : "rotate-0"} duration-1000 w-[24px]`}>
+          className={`${open ? "rotate-180" : "rotate-0"} duration-1000 w-[24px]`}
+        >
           <g transform="rotate(-90 512 512)">
             <path
               fill="#000000"
@@ -87,19 +92,22 @@ export default function Home() {
         </svg>
       </button>
       <nav
-        className={`fixed z-[100] h-screen overflow-hidden bg-primary-100 duration-1000 border-r-2 border-secondary-200 font-garamond text-secondary-200 w-[25vw] hidden lg:block`}>
+        className={`fixed z-[100] h-screen overflow-hidden bg-primary-100 duration-1000 border-r-2 border-secondary-200 font-garamond text-secondary-200 w-[25vw] hidden lg:block`}
+      >
         <div className="flex flex-col justify-start top-[50%] relative translate-y-[-50%] pl-[32px] gap-y-[16px]">
           {data.map(({ SetPage, text, imageUrl }) => {
             return (
               <div
                 className="flex flex-row justify-start items-center gap-x-[8px] hover:font-bold duration-300"
-                key="">
+                key=""
+              >
                 <img src={imageUrl} alt="" height={24} width={24} />
                 <button onClick={() => setPage(SetPage)} key={text}>
                   <H2
                     className={`text-start ${
                       page === SetPage ? "font-bold" : ""
-                    }`}>
+                    }`}
+                  >
                     {text}
                   </H2>
                 </button>

@@ -25,7 +25,8 @@ export function ListPortofolio(props: any) {
           onClick={() => setOpen((prev) => !prev)}
           className={`${
             open ? "rotate-0" : "-rotate-90"
-          } duration-300 hover:cursor-pointer hover:scale-110`}>
+          } duration-300 hover:cursor-pointer hover:scale-110`}
+        >
           <path
             fill="#C69749"
             d="m12 13.171l4.95-4.95l1.414 1.415L12 16L5.636 9.636L7.05 8.222z"
@@ -36,7 +37,8 @@ export function ListPortofolio(props: any) {
       <div
         className={`${
           open ? "max-h-0" : "max-h-[100vh]"
-        } flex flex-col gap-y-5 overflow-hidden text-justify duration-1000 mt-[16px]`}>
+        } flex flex-col gap-y-5 overflow-hidden text-justify duration-1000 mt-[16px]`}
+      >
         {children}
         <div className="flex flex-row gap-x-[8px]">
           {repositoryUrl && repositoryText != null && (

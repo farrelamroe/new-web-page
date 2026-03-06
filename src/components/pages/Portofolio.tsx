@@ -36,7 +36,8 @@ export function Portofolio() {
                 linkUrl={linkUrl}
                 linkText={linkText}
                 figmaUrl={figmaUrl}
-                figmaText={figmaText}>
+                figmaText={figmaText}
+              >
                 {children}
               </ListPortofolio>
             );

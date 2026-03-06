@@ -1,1 +1,1 @@
-export * from "./TypingAnimation"
+export * from "./TypingAnimation";

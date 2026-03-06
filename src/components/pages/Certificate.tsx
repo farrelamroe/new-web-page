@@ -20,7 +20,8 @@ export function Certificate() {
           className="text-center"
           data-aos="fade-left"
           data-aos-duration="1000"
-          data-aos-delay="100">
+          data-aos-delay="100"
+        >
           <td className="max-w-[10vw]">
             <H3>Title</H3>
           </td>
@@ -35,7 +36,8 @@ export function Certificate() {
           return (
             <tr
               className="text-center border-2 border-secondary-200"
-              key={title}>
+              key={title}
+            >
               <td className="max-w-[10vw] items-center text-start">
                 <H5>{title}</H5>
               </td>
@@ -47,7 +49,8 @@ export function Certificate() {
                   <a
                     href={url}
                     className="hover:font-bold duration-300"
-                    target="blank">
+                    target="blank"
+                  >
                     here
                   </a>
                 </H5>

@@ -14,7 +14,8 @@ export function Profile() {
       <div
         className="flex flex-col lg:flex-row justify-center items-center gap-x-5"
         data-aos="fade-left"
-        data-aos-duration="1000">
+        data-aos-duration="1000"
+      >
         <img
           src="/images/foto.jpg"
           alt="poto"
@@ -35,17 +36,20 @@ export function Profile() {
         className="grid grid-cols-1 lg:grid-cols-2 text-center items-center justify-center gap-y-[32px] text-secondary-200 pt-[32px]"
         data-aos="fade-left"
         data-aos-duration="1000"
-        data-aos-delay="300">
+        data-aos-delay="300"
+      >
         {data.map(({ title, text, href }: any) => {
           return (
             <div
               className="flex flex-col justify-center lg:justify-start lg:text-start gap-y-[5px]"
-              key={title}>
+              key={title}
+            >
               <H4>{title}:</H4>
               <H5
                 className={`bg-primary-200 text-center rounded-[8px] border-1 py-1 px-3 max-w-[100%] lg:max-w-[75%] ${
                   href == "" ? "" : "hover:font-bold duration-300"
-                }`}>
+                }`}
+              >
                 <a href={href} target="blank">
                   {text}
                 </a>

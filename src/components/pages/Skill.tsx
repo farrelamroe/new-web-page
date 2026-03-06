@@ -21,7 +21,8 @@ export function Skill() {
         className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 justify-center gap-[64px] mt-[16px] items-center"
         data-aos="fade-left"
         data-aos-duration="1000"
-        data-aos-delay="300">
+        data-aos-delay="300"
+      >
         {data.map(({ imageUrl }) => {
           return (
             <img
