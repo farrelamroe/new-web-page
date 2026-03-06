@@ -1,5 +1,43 @@
 const data = [
   {
+    title: "AAIL",
+    time: "Jan 2026 - Present",
+    position: "Software Engineer",
+    achievement: (
+      <ul className="custom-list-disc">
+        <li>
+          Architected a secure and scalable server-side infrastructure for Sayo
+          Academy using Next.js and Supabase, which streamlined data integration
+          and enabled seamless synchronization of classroom activities.
+        </li>
+        <li>
+          Orchestrated advanced API integrations and role-based access control
+          (RBAC) mechanisms using Clerk, successfully eliminating security
+          vulnerabilities and significantly boosting overall system permission
+          logic for both Sayo Coder and Sayo Reading.
+        </li>
+        <li>
+          Analyzed and formulated global accessibility strategies by
+          implementing robust internationalization (i18n), providing the Sayo
+          Academy and Primary Worksheet platforms with comprehensive support for
+          English and Traditional Chinese users.
+        </li>
+        <li>
+          Engineered complex frontend module optimizations that slashed loading
+          times and enhanced UX, drastically improving application navigation
+          and modal responsiveness across all Sayo educational platforms using
+          Tailwind CSS.
+        </li>
+        <li>
+          Co-developed proprietary educational features and resolved critical
+          Next.js build configuration bottlenecks to identify performance
+          opportunities and refine deployment reliability across the
+          company&apos;s ecosystem.
+        </li>
+      </ul>
+    ),
+  },
+  {
     title: "Turnkey Inside - Remote",
     time: "Jun 2025 - Dec 2025",
     position: "Data Monitoring and Automation Supervisor",
