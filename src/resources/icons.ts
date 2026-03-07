@@ -1,4 +1,4 @@
-import { IconType } from "react-icons";
+import type { IconType } from "react-icons";
 
 import {
   HiArrowUpRight,
@@ -43,9 +43,27 @@ import {
   SiStreamlit,
   SiRedis,
   SiElasticsearch,
+  SiCplusplus,
+  SiSass,
+  SiFlutter,
+  SiDart,
+  SiNodedotjs,
+  SiAmazonwebservices,
+  SiRedux,
+  SiPhp,
+  SiWordpress,
+  SiThreedotjs,
+  SiLangchain,
+  SiTensorflow,
+  SiExpress,
+  SiKeras,
+  SiOpenai,
+  SiPostman,
+  SiMeta,
+  SiGoogle,
 } from "react-icons/si";
 
-import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, } from "react-icons/fa6";
+import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, FaJava, } from "react-icons/fa6";
 
 export const iconLibrary: Record<string, IconType> = {
   arrowUpRight: HiArrowUpRight,
@@ -90,6 +108,25 @@ export const iconLibrary: Record<string, IconType> = {
   streamlit: SiStreamlit,
   redis: SiRedis,
   elasticsearch: SiElasticsearch,
+  cplusplus: SiCplusplus,
+  scss: SiSass,
+  flutter: SiFlutter,
+  dart: SiDart,
+  nodejs: SiNodedotjs,
+  aws: SiAmazonwebservices,
+  redux: SiRedux,
+  php: SiPhp,
+  wordpress: SiWordpress,
+  threejs: SiThreedotjs,
+  langchain: SiLangchain,
+  tensorflow: SiTensorflow,
+  express: SiExpress,
+  keras: SiKeras,
+  openai: SiOpenai,
+  postman: SiPostman,
+  meta: SiMeta,
+  google: SiGoogle,
+  java: FaJava,
   facebook: FaFacebook,
   pinterest: FaPinterest,
   whatsapp: FaWhatsapp,

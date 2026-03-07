@@ -9,10 +9,9 @@ import {
   Column,
   Flex,
   Meta,
-  opacity,
   RevealFx,
-  SpacingToken,
 } from "@once-ui-system/core";
+import type { opacity, SpacingToken } from "@once-ui-system/core";
 import { Footer, Header, RouteGuard, Providers } from "@/components";
 import { baseURL, effects, fonts, style, dataStyle, home } from "@/resources";
 
@@ -47,6 +46,8 @@ export default async function RootLayout({
       <head>
         <script
           id="theme-init"
+          suppressHydrationWarning
+          // biome-ignore lint/security/noDangerouslySetInnerHtml: required for inline theme initialization script
           dangerouslySetInnerHTML={{
             __html: `
               (function() {

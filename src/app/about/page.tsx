@@ -302,8 +302,8 @@ export default function About() {
                     </Text>
                     {skill.tags && skill.tags.length > 0 && (
                       <Row wrap gap="8" paddingTop="8">
-                        {skill.tags.map((tag, tagIndex) => (
-                          <Tag key={`${skill.title}-${tagIndex}`} size="l" prefixIcon={tag.icon}>
+                        {skill.tags.map((tag) => (
+                          <Tag key={tag.name} size="l" prefixIcon={tag.icon as string}>
                             {tag.name}
                           </Tag>
                         ))}
