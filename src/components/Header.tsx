@@ -101,6 +101,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="person"
                       href="/about"
+                      label={about.label}
                       selected={pathname === "/about"}
                     />
                   </Row>
