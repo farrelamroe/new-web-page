@@ -303,7 +303,7 @@ export default function About() {
                     {skill.tags && skill.tags.length > 0 && (
                       <Row wrap gap="8" paddingTop="8">
                         {skill.tags.map((tag) => (
-                          <Tag key={tag.name} size="l" prefixIcon={tag.icon as string}>
+                          <Tag key={tag.name} size="l" prefixIcon={tag.icon as string} className="interactive-tag">
                             {tag.name}
                           </Tag>
                         ))}

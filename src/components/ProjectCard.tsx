@@ -65,8 +65,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           <Column flex={7} gap="16">
             {technologies?.length > 0 && (
               <Row wrap gap="8">
-                {technologies.map((tech, i) => (
-                  <Tag key={i} size="m" prefixIcon={tech.icon}>
+                {technologies.map((tech) => (
+                  <Tag key={tech.name} size="m" prefixIcon={tech.icon} className="interactive-tag">
                     {tech.name}
                   </Tag>
                 ))}

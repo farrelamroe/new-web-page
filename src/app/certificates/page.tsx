@@ -17,7 +17,7 @@ const certificates = [
         issuer: "Yureka Education Center",
         year: "2026",
         url: "https://drive.google.com/file/d/1RjxjqV-Q27DxA_fZsq1a9s4cfL1GsYxE/view?usp=sharing",
-        tags: [{ name: "English" }],
+        tags: [{ name: "English", icon: "globe" }],
         path: "English Test",
     },
     // 2025
@@ -26,7 +26,7 @@ const certificates = [
         issuer: "Orbit Future Academy",
         year: "2025",
         url: "https://drive.google.com/file/d/1BayH_djNVAh0zlr4lyf3PqmD9Qgc8O57/view?usp=drive_link",
-        tags: [{ name: "Cloud" }, { name: "AWS" }],
+        tags: [{ name: "Cloud", icon: "globe" }, { name: "AWS", icon: "aws" }],
         path: "AWS",
     },
     {
@@ -34,7 +34,7 @@ const certificates = [
         issuer: "Hacktiv8",
         year: "2025",
         url: "https://drive.google.com/file/d/1EFYjsv13sj6l0hWUn_IG-2Y4gp_yrgir/view?usp=sharing",
-        tags: [{ name: "AI" }, { name: "Python", icon: "python" }, { name: "JavaScript", icon: "javascript" }],
+        tags: [{ name: "AI", icon: "google" }, { name: "Python", icon: "python" }, { name: "JavaScript", icon: "javascript" }],
         path: "AI and Web Development",
     },
     {
@@ -42,7 +42,7 @@ const certificates = [
         issuer: "Hacktiv8",
         year: "2025",
         url: "https://drive.google.com/file/d/1_Mp0tW-1B9ohns7aubLSXXN05fk6K4Zk/view?usp=drive_link",
-        tags: [{ name: "LLM / Gemini API" }, { name: "Python", icon: "python" }, { name: "Streamlit", icon: "streamlit" }],
+        tags: [{ name: "LLM / Gemini API", icon: "gemini" }, { name: "Python", icon: "python" }, { name: "Streamlit", icon: "streamlit" }],
         path: "AI and Data Scientist",
     },
     // 2024
@@ -59,7 +59,7 @@ const certificates = [
         issuer: "Alterra Academy",
         year: "2024",
         url: "https://drive.google.com/file/d/1tsqhBdgblzfM8nGuD2-Ak-SgpNt4Lj-P/view?usp=sharing",
-        tags: [{ name: "Go (Golang)", icon: "golang" }, { name: "Backend" }],
+        tags: [{ name: "Go (Golang)", icon: "golang" }, { name: "Backend", icon: "nodejs" }],
         path: "Back-End Engineer with Golang",
     },
     // 2023
@@ -68,7 +68,7 @@ const certificates = [
         issuer: "Build With Angga",
         year: "2023",
         url: "https://class.buildwithangga.com/talent/farrelamroe/flutter-dart-crash-course-modern-ui-design",
-        tags: [{ name: "Flutter" }, { name: "Dart" }],
+        tags: [{ name: "Flutter", icon: "flutter" }, { name: "Dart", icon: "dart" }],
         path: "Multi Platform App",
     },
     {
@@ -76,7 +76,7 @@ const certificates = [
         issuer: "Dicoding",
         year: "2023",
         url: "https://www.dicoding.com/certificates/98XWV0039PM3",
-        tags: [{ name: "Dart" }, { name: "Flutter" }],
+        tags: [{ name: "Dart", icon: "dart" }, { name: "Flutter", icon: "flutter" }],
         path: "Multi Platform App",
     },
     // 2022
@@ -85,7 +85,7 @@ const certificates = [
         issuer: "Dicoding",
         year: "2022",
         url: "https://www.dicoding.com/certificates/JMZVG4GVOZN9",
-        tags: [{ name: "Python", icon: "python" }, { name: "Data Viz" }],
+        tags: [{ name: "Python", icon: "python" }, { name: "Data Viz", icon: "grid" }],
         path: "Machine Learning",
     },
     {
@@ -101,7 +101,7 @@ const certificates = [
         issuer: "Dicoding",
         year: "2022",
         url: "https://www.dicoding.com/certificates/QLZ9K1Y57Z5D",
-        tags: [{ name: "Cloud" }, { name: "AWS" }],
+        tags: [{ name: "Cloud", icon: "globe" }, { name: "AWS", icon: "aws" }],
         path: "Backend",
     },
     {
@@ -117,7 +117,7 @@ const certificates = [
         issuer: "Dicoding",
         year: "2022",
         url: "https://www.dicoding.com/certificates/98XWR46DWZM3",
-        tags: [{ name: "JavaScript", icon: "javascript" }, { name: "Backend" }],
+        tags: [{ name: "JavaScript", icon: "javascript" }, { name: "Backend", icon: "nodejs" }],
         path: "Backend",
     },
     {
@@ -212,7 +212,7 @@ export default function Certificates() {
                                 </Row>
                                 <Row wrap gap="8" paddingTop="4">
                                     {cert.tags.map((tag, j) => (
-                                        <Tag key={tag.name} size="m" prefixIcon={(tag as { name: string; icon?: string }).icon}>
+                                        <Tag key={tag.name} size="m" prefixIcon={(tag as { name: string; icon?: string }).icon} className="interactive-tag">
                                             {tag.name}
                                         </Tag>
                                     ))}

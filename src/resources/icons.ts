@@ -14,6 +14,10 @@ import {
   HiOutlineRocketLaunch,
 } from "react-icons/hi2";
 
+import { VscVscode } from "react-icons/vsc";
+import { HapiIcon } from "../components/icons/HapiIcon";
+import { GroqIcon } from "../components/icons/GroqIcon";
+
 import {
   PiHouseDuotone,
   PiUserCircleDuotone,
@@ -61,6 +65,8 @@ import {
   SiPostman,
   SiMeta,
   SiGoogle,
+  SiPostgresql,
+  SiGooglegemini,
 } from "react-icons/si";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, FaJava, } from "react-icons/fa6";
@@ -104,7 +110,7 @@ export const iconLibrary: Record<string, IconType> = {
   sql: SiMysql,
   gitlab: SiGitlab,
   git: SiGit,
-  vscode: SiVsco,
+  vscode: VscVscode,
   streamlit: SiStreamlit,
   redis: SiRedis,
   elasticsearch: SiElasticsearch,
@@ -126,6 +132,8 @@ export const iconLibrary: Record<string, IconType> = {
   postman: SiPostman,
   meta: SiMeta,
   google: SiGoogle,
+  postgresql: SiPostgresql,
+  gemini: SiGooglegemini,
   java: FaJava,
   facebook: FaFacebook,
   pinterest: FaPinterest,
@@ -133,6 +141,8 @@ export const iconLibrary: Record<string, IconType> = {
   reddit: FaReddit,
   telegram: FaTelegram,
   instagram: FaInstagram,
+  hapi: HapiIcon,
+  groq: GroqIcon,
 };
 
 export type IconLibrary = typeof iconLibrary;
