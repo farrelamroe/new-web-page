@@ -1,4 +1,4 @@
-import { getPosts } from "@/utils/utils";
+import { getPosts } from "@/utils/posts";
 import { baseURL, blog, person } from "@/resources";
 import { NextResponse } from "next/server";
 

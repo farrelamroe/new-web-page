@@ -1,8 +1,15 @@
-import { getPosts } from "@/utils/utils";
 import { Grid } from "@once-ui-system/core";
+import type { Metadata } from "@/utils/posts";
 import Post from "./Post";
 
+interface PostData {
+  metadata: Metadata;
+  slug: string;
+  content: string;
+}
+
 interface PostsProps {
+  posts: PostData[];
   range?: [number] | [number, number];
   columns?: "1" | "2" | "3";
   thumbnail?: boolean;
@@ -11,13 +18,14 @@ interface PostsProps {
 }
 
 export function Posts({
+  posts,
   range,
   columns = "1",
   thumbnail = false,
   exclude = [],
   direction,
 }: PostsProps) {
-  let allBlogs = getPosts(["src", "app", "blog", "posts"]);
+  let allBlogs = [...posts];
 
   // Exclude by slug (exact match)
   if (exclude.length) {
