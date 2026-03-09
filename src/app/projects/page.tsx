@@ -1,7 +1,6 @@
-import { Column, Heading, Meta, Schema, RevealFx } from "@once-ui-system/core";
+import { Column, Heading, Meta, Schema, Fade } from "@once-ui-system/core";
 import { baseURL, about, person, work } from "@/resources";
 import { Projects } from "@/components/projects/Projects";
-import { getPosts } from "@/utils/posts";
 
 export async function generateMetadata() {
   return Meta.generate({
@@ -14,10 +13,8 @@ export async function generateMetadata() {
 }
 
 export default function Work() {
-  const posts = getPosts(["src", "app", "projects", "projects"]);
-
   return (
-    <Column maxWidth="m" paddingTop="24">
+    <Column maxWidth="m" paddingY="24">
       <Schema
         as="webPage"
         baseURL={baseURL}
@@ -31,12 +28,10 @@ export default function Work() {
           image: `${baseURL}${person.avatar}`,
         }}
       />
-      <RevealFx delay={0.2}>
-        <Heading marginBottom="l" variant="heading-strong-xl" align="center">
-          {work.title}
-        </Heading>
-      </RevealFx>
-      <Projects projects={posts} />
+      <Heading marginBottom="l" variant="display-strong-s">
+        {work.title}
+      </Heading>
+      <Projects />
     </Column>
   );
 }

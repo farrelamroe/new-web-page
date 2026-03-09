@@ -164,6 +164,25 @@ export const Header = () => {
                   </Row>
                 </>
               )}
+              {routes["/tags"] && (
+                <>
+                  <Row s={{ hide: true }}>
+                    <ToggleButton
+                      prefixIcon="hashtag"
+                      href="/tags"
+                      label="Tags"
+                      selected={pathname.startsWith("/tags")}
+                    />
+                  </Row>
+                  <Row hide s={{ hide: false }}>
+                    <ToggleButton
+                      prefixIcon="hashtag"
+                      href="/tags"
+                      selected={pathname.startsWith("/tags")}
+                    />
+                  </Row>
+                </>
+              )}
               {display.themeSwitcher && (
                 <>
                   <Line background="neutral-alpha-medium" vert maxHeight="24" />

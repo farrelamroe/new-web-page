@@ -1,67 +1,39 @@
+import { notFound } from "next/navigation";
+import { getPosts } from "@/utils/utils";
 import {
+  Meta,
+  Schema,
+  AvatarGroup,
+  Button,
   Column,
   Flex,
   Heading,
+  Media,
   Row,
-  Text,
-  IconButton,
   Tag,
-  RevealFx,
+  Text,
+  SmartLink,
+  Avatar,
+  Line,
 } from "@once-ui-system/core";
-import { getPosts } from "@/utils/posts";
-import { baseURL, person } from "@/resources";
-import { CustomMDX } from "@/components";
+import { baseURL, about, person, work } from "@/resources";
+import { formatDate } from "@/utils/formatDate";
+import { ScrollToHash, CustomMDX } from "@/components";
+import type { Metadata } from "next";
 import { Projects } from "@/components/projects/Projects";
-import { notFound } from "next/navigation";
-import { ScrollToHash } from "@/components";
 
-export async function generateMetadata({ params }: { params: Promise<{ slug: string[] }> }) {
-  const routeParams = await params;
-  const slugPath = Array.isArray(routeParams.slug)
-    ? routeParams.slug.join("/")
-    : routeParams.slug || "";
-
-  const post = getPosts(["src", "app", "projects", "projects"]).find((post) => post.slug === slugPath);
-
-  if (!post) {
-    return {};
-  }
-
-  const { title, summary, image } = post.metadata;
-
-  const ogImage = image 
-    ? (image.startsWith("http") ? image : `${baseURL}${image}`)
-    : `${baseURL}/api/og/generate?title=${encodeURIComponent(title)}`;
-
-  return {
-    title: `${title} - ${person.name}`,
-    description: summary,
-    openGraph: {
-      title: `${title} - ${person.name}`,
-      description: summary,
-      type: "article",
-      url: `${baseURL}/projects/${post.slug}`,
-      images: [
-        {
-          url: ogImage,
-        },
-      ],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: `${title} - ${person.name}`,
-      description: summary,
-      images: [ogImage],
-    },
-  };
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
+  const posts = getPosts(["src", "app", "projects", "projects"]);
+  return posts.map((post) => ({
+    slug: post.slug,
+  }));
 }
 
-interface Technology {
-  name: string;
-  icon?: string;
-}
-
-export default async function Project({ params }: { params: Promise<{ slug: string[] }> }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ slug: string | string[] }>;
+}): Promise<Metadata> {
   const routeParams = await params;
   const slugPath = Array.isArray(routeParams.slug)
     ? routeParams.slug.join("/")
@@ -70,33 +42,102 @@ export default async function Project({ params }: { params: Promise<{ slug: stri
   const posts = getPosts(["src", "app", "projects", "projects"]);
   const post = posts.find((post) => post.slug === slugPath);
 
+  if (!post) return {};
+
+  return Meta.generate({
+    title: post.metadata.title,
+    description: post.metadata.summary,
+    baseURL: baseURL,
+    image: post.metadata.image || `/api/og/generate?title=${post.metadata.title}`,
+    path: `${work.path}/${post.slug}`,
+  });
+}
+
+export default async function Project({
+  params,
+}: {
+  params: Promise<{ slug: string | string[] }>;
+}) {
+  const routeParams = await params;
+  const slugPath = Array.isArray(routeParams.slug)
+    ? routeParams.slug.join("/")
+    : routeParams.slug || "";
+
+  const post = getPosts(["src", "app", "projects", "projects"]).find((post) => post.slug === slugPath);
+
   if (!post) {
     notFound();
   }
 
+  const avatars =
+    post.metadata.team?.map((person) => ({
+      src: person.avatar,
+    })) || [];
+
   return (
-    <Column fillWidth>
-      <RevealFx delay={0.2} speed="fast">
-        <Heading variant="display-strong-l" marginBottom="24">
-          {post.metadata.title}
-        </Heading>
-      </RevealFx>
+    <Column as="section" maxWidth="m" horizontal="center" gap="l">
+      <Schema
+        as="blogPosting"
+        baseURL={baseURL}
+        path={`${work.path}/${post.slug}`}
+        title={post.metadata.title}
+        description={post.metadata.summary}
+        datePublished={post.metadata.publishedAt}
+        dateModified={post.metadata.publishedAt}
+        image={
+          post.metadata.image || `/api/og/generate?title=${encodeURIComponent(post.metadata.title)}`
+        }
+        author={{
+          name: person.name,
+          url: `${baseURL}${about.path}`,
+          image: `${baseURL}${person.avatar}`,
+        }}
+      />
+      <Column maxWidth="s" gap="16" horizontal="center" align="center">
+        <SmartLink href="/projects">
+          <Text variant="label-strong-m">Projects</Text>
+        </SmartLink>
 
-      <Row marginBottom="32" wrap gap="8">
-        {(post.metadata.technologies || []).map((tech: Technology) => (
-          <Tag key={tech.name} size="l" prefixIcon={tech.icon}>
-            {tech.name}
-          </Tag>
-        ))}
+        <Heading variant="display-strong-m">{post.metadata.title}</Heading>
+      </Column>
+      <Row marginBottom="32" horizontal="center">
+        <Row gap="16" vertical="center">
+          {post.metadata.team && <AvatarGroup reverse avatars={avatars} size="s" />}
+          <Text variant="label-default-m" onBackground="brand-weak">
+            {post.metadata.team?.map((member, idx) => (
+              <span key={member.name}>
+                {idx > 0 && (
+                  <Text as="span" onBackground="neutral-weak">
+                    ,{" "}
+                  </Text>
+                )}
+                <SmartLink href={member.linkedIn}>{member.name}</SmartLink>
+              </span>
+            ))}
+          </Text>
+        </Row>
       </Row>
-
-      <CustomMDX source={post.content} />
-
-      <Column marginTop="80" fillWidth>
+      {post.metadata.images.length > 0 && (
+        <Media priority aspectRatio="16 / 9" radius="m" alt="image" src={post.metadata.images[0]} />
+      )}
+      {post.metadata.technologies && post.metadata.technologies.length > 0 && (
+        <Row wrap gap="8" paddingX="s">
+          {post.metadata.technologies.map((tech, i) => (
+            <Tag key={tech.name} size="m" prefixIcon={tech.icon}>
+              {tech.name}
+            </Tag>
+          ))}
+        </Row>
+      )}
+      <Column style={{ margin: "auto" }} as="article" maxWidth="xs">
+        <CustomMDX source={post.content} />
+      </Column>
+      <Column fillWidth gap="40" horizontal="center" marginTop="40">
+        <Line maxWidth="40" />
         <Heading as="h2" variant="heading-strong-xl" marginBottom="24">
           Related projects
         </Heading>
-        <Projects projects={posts} exclude={[post.slug]} range={[1, 2]} />
+        <Projects exclude={[post.slug]} range={[2]} />
       </Column>
       <ScrollToHash />
     </Column>

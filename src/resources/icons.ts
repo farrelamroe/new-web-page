@@ -12,6 +12,7 @@ import {
   HiOutlineDocument,
   HiOutlineGlobeAsiaAustralia,
   HiOutlineRocketLaunch,
+  HiHashtag,
 } from "react-icons/hi2";
 
 import { VscVscode } from "react-icons/vsc";
@@ -143,6 +144,7 @@ export const iconLibrary: Record<string, IconType> = {
   instagram: FaInstagram,
   hapi: HapiIcon,
   groq: GroqIcon,
+  hashtag: HiHashtag,
 };
 
 export type IconLibrary = typeof iconLibrary;
