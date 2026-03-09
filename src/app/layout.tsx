@@ -13,7 +13,7 @@ import {
   RevealFx,
 } from "@once-ui-system/core";
 import type { opacity, SpacingToken } from "@once-ui-system/core";
-import { Footer, Header, RouteGuard, Providers, CommandPalette, EasterEgg } from "@/components";
+import { Footer, Header, RouteGuard, Providers, CommandPalette, EasterEgg, BackToTop } from "@/components";
 import { baseURL, effects, fonts, style, dataStyle, home } from "@/resources";
 
 export async function generateMetadata() {
@@ -168,6 +168,7 @@ export default async function RootLayout({
           <Analytics />
           <CommandPalette />
           <EasterEgg />
+          <BackToTop />
         </Column>
       </Providers>
     </Flex>

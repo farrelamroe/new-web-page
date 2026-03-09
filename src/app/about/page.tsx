@@ -14,6 +14,7 @@ import {
 } from "@once-ui-system/core";
 import { baseURL, about, person, social } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
+import { GithubContributions } from "@/components/about/GithubCalendar";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
 
@@ -334,6 +335,10 @@ export default function About() {
                     )}
                   </Column>
                 ))}
+              </Column>
+              
+              <Column fillWidth paddingTop="80" paddingBottom="m">
+                <GithubContributions />
               </Column>
             </>
           )}

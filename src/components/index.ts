@@ -10,3 +10,4 @@ export { ThemeToggle } from "@/components/ThemeToggle";
 export { CustomMDX } from "@/components/mdx";
 export { CommandPalette } from "@/components/CommandPalette";
 export { EasterEgg } from "@/components/EasterEgg";
+export { BackToTop } from "@/components/BackToTop";

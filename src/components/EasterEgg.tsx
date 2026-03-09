@@ -20,7 +20,7 @@ export const EasterEgg = () => {
       ].join("\\n");
 
       console.log(
-        "%c" + art,
+        `%c${art}`,
         "color: #2abff0; font-weight: bold; font-family: monospace;"
       );
       console.log(

@@ -39,6 +39,13 @@ export const Footer = () => {
                 />
               ),
           )}
+          {/* <IconButton
+            href="/api/rss"
+            icon="link"
+            tooltip="RSS Feed"
+            size="s"
+            variant="ghost"
+          /> */}
         </Row>
       </Row>
       <Row height="80" hide s={{ hide: false }} />
