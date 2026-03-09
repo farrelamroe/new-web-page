@@ -3,6 +3,7 @@ import "@once-ui-system/core/css/tokens.css";
 import "@/resources/custom.css";
 
 import classNames from "classnames";
+import { Analytics } from "@vercel/analytics/react";
 
 import {
   Background,
@@ -12,7 +13,7 @@ import {
   RevealFx,
 } from "@once-ui-system/core";
 import type { opacity, SpacingToken } from "@once-ui-system/core";
-import { Footer, Header, RouteGuard, Providers } from "@/components";
+import { Footer, Header, RouteGuard, Providers, CommandPalette, EasterEgg } from "@/components";
 import { baseURL, effects, fonts, style, dataStyle, home } from "@/resources";
 
 export async function generateMetadata() {
@@ -164,6 +165,9 @@ export default async function RootLayout({
             </Flex>
           </Flex>
           <Footer />
+          <Analytics />
+          <CommandPalette />
+          <EasterEgg />
         </Column>
       </Providers>
     </Flex>

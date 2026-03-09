@@ -37,17 +37,17 @@ export function ProjectsClient({ projects }: ProjectsClientProps) {
     // Category filter logic
     let matchesCategory = true;
     const techWords = post.metadata.technologies?.map(t => t.name.toLowerCase()).join(" ") || "";
-    const titleAndSummary = (post.metadata.title + " " + post.metadata.summary).toLowerCase();
-    const fullSearchStr = (techWords + " " + titleAndSummary + " " + post.content).toLowerCase();
+    const titleAndSummary = `${post.metadata.title} ${post.metadata.summary}`.toLowerCase();
+    const fullSearchStr = `${techWords} ${titleAndSummary} ${post.content}`.toLowerCase();
 
     if (activeCategory === "Frontend") {
-      matchesCategory = /react|next|vue|angular|tailwind|bootstrap|scss|html|frontend/i.test(techWords + " " + titleAndSummary);
+      matchesCategory = /react|next|vue|angular|tailwind|bootstrap|scss|html|frontend/i.test(`${techWords} ${titleAndSummary}`);
     } else if (activeCategory === "Backend") {
-      matchesCategory = /node|express|go |golang|java|sql|postgres|redis|elastic|api|backend/i.test(techWords + " " + titleAndSummary);
+      matchesCategory = /node|express|go |golang|java|sql|postgres|redis|elastic|api|backend/i.test(`${techWords} ${titleAndSummary}`);
     } else if (activeCategory === "AI & Data") {
-      matchesCategory = /python|streamlit|tensorflow|keras|llm|gemini|groq|bilstm|machine learning|data monitoring/i.test(techWords + " " + titleAndSummary);
+      matchesCategory = /python|streamlit|tensorflow|keras|llm|gemini|groq|bilstm|machine learning|data monitoring/i.test(`${techWords} ${titleAndSummary}`);
     } else if (activeCategory === "Mobile") {
-      matchesCategory = /flutter|dart|mobile/i.test(techWords + " " + titleAndSummary);
+      matchesCategory = /flutter|dart|mobile/i.test(`${techWords} ${titleAndSummary}`);
     }
 
     const matchesSearch = fullSearchStr.includes(searchValue.toLowerCase());
