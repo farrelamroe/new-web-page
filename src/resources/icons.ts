@@ -25,6 +25,9 @@ import {
   PiGridFourDuotone,
   PiBookBookmarkDuotone,
   PiImageDuotone,
+  PiBriefcaseDuotone,
+  PiMedalDuotone,
+  PiIdentificationCardDuotone,
 } from "react-icons/pi";
 
 import {
@@ -68,6 +71,7 @@ import {
   SiGoogle,
   SiPostgresql,
   SiGooglegemini,
+  SiStrapi,
 } from "react-icons/si";
 
 import { FaDiscord, FaGithub, FaLinkedin, FaX, FaThreads, FaInstagram, FaXTwitter, FaFacebook, FaPinterest, FaWhatsapp, FaReddit, FaTelegram, FaJava, } from "react-icons/fa6";
@@ -145,6 +149,10 @@ export const iconLibrary: Record<string, IconType> = {
   hapi: HapiIcon,
   groq: GroqIcon,
   hashtag: HiHashtag,
+  work: PiBriefcaseDuotone,
+  certificate: PiMedalDuotone,
+  cv: PiIdentificationCardDuotone,
+  strapi: SiStrapi,
 };
 
 export type IconLibrary = typeof iconLibrary;

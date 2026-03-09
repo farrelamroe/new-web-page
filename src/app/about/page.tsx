@@ -178,6 +178,7 @@ export default function About() {
                             size="s"
                             weight="default"
                             variant="secondary"
+                            className={`social-btn social-btn-${item.icon}`}
                           />
                         </Row>
                         <Row hide s={{ hide: false }}>
@@ -187,6 +188,7 @@ export default function About() {
                             href={item.link}
                             icon={item.icon}
                             variant="secondary"
+                            className={`social-btn social-btn-${item.icon}`}
                           />
                         </Row>
                       </React.Fragment>
@@ -208,9 +210,9 @@ export default function About() {
                 {about.work.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
-                {about.work.experiences.map((experience, index) => (
-                  <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
-                    <Row fillWidth horizontal="between" vertical="end" marginBottom="4">
+                  {about.work.experiences.map((experience, index) => (
+                    <Column key={`${experience.company}-${experience.role}-${index}`} fillWidth>
+                      <Row fillWidth horizontal="between" vertical="end" marginBottom="4">
                       <Text id={experience.company} variant="heading-strong-l">
                         {experience.company}
                       </Text>
@@ -267,8 +269,8 @@ export default function About() {
                 {about.studies.title}
               </Heading>
               <Column fillWidth gap="l" marginBottom="40">
-                {about.studies.institutions.map((institution, index) => (
-                  <Column key={`${institution.name}-${index}`} fillWidth gap="4">
+                  {about.studies.institutions.map((institution, index) => (
+                    <Column key={`${institution.name}-${index}`} fillWidth gap="4">
                     <Text id={institution.name} variant="heading-strong-l">
                       {institution.name}
                     </Text>
@@ -286,14 +288,14 @@ export default function About() {
               <Heading
                 as="h2"
                 id={about.technical.title}
-                variant="display-strong-s"
-                marginBottom="40"
-              >
-                {about.technical.title}
-              </Heading>
-              <Column fillWidth gap="l">
-                {about.technical.skills.map((skill, index) => (
-                  <Column key={skill.title} fillWidth gap="4">
+                  variant="display-strong-s"
+                  marginBottom="40"
+                >
+                  {about.technical.title}
+                </Heading>
+                <Column fillWidth gap="l">
+                  {about.technical.skills.map((skill, index) => (
+                    <Column key={skill.title} fillWidth gap="4">
                     <Text id={skill.title} variant="heading-strong-l">
                       {skill.title}
                     </Text>
@@ -303,7 +305,7 @@ export default function About() {
                     {skill.tags && skill.tags.length > 0 && (
                       <Row wrap gap="8" paddingTop="8">
                         {skill.tags.map((tag) => (
-                          <Tag key={tag.name} size="l" prefixIcon={tag.icon as string} className="interactive-tag">
+                          <Tag key={tag.name} size="l" prefixIcon={tag.icon as string} className={`interactive-tag${tag.icon ? ` tag-icon-${tag.icon}` : ""}`}>
                             {tag.name}
                           </Tag>
                         ))}

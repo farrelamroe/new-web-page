@@ -111,7 +111,7 @@ export const Header = () => {
                 <>
                   <Row s={{ hide: true }}>
                     <ToggleButton
-                      prefixIcon="grid"
+                      prefixIcon="rocket"
                       href="/projects"
                       label={work.label}
                       selected={pathname.startsWith("/projects")}
@@ -119,7 +119,7 @@ export const Header = () => {
                   </Row>
                   <Row hide s={{ hide: false }}>
                     <ToggleButton
-                      prefixIcon="grid"
+                      prefixIcon="rocket"
                       href="/projects"
                       selected={pathname.startsWith("/projects")}
                     />
@@ -130,7 +130,7 @@ export const Header = () => {
                 <>
                   <Row s={{ hide: true }}>
                     <ToggleButton
-                      prefixIcon="person"
+                      prefixIcon="work"
                       href="/experience"
                       label="Experience"
                       selected={pathname.startsWith("/experience")}
@@ -138,7 +138,7 @@ export const Header = () => {
                   </Row>
                   <Row hide s={{ hide: false }}>
                     <ToggleButton
-                      prefixIcon="person"
+                      prefixIcon="work"
                       href="/experience"
                       selected={pathname.startsWith("/experience")}
                     />
@@ -149,7 +149,7 @@ export const Header = () => {
                 <>
                   <Row s={{ hide: true }}>
                     <ToggleButton
-                      prefixIcon="document"
+                      prefixIcon="certificate"
                       href="/certificates"
                       label="Certificates"
                       selected={pathname.startsWith("/certificates")}
@@ -157,7 +157,7 @@ export const Header = () => {
                   </Row>
                   <Row hide s={{ hide: false }}>
                     <ToggleButton
-                      prefixIcon="document"
+                      prefixIcon="certificate"
                       href="/certificates"
                       selected={pathname.startsWith("/certificates")}
                     />

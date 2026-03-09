@@ -211,11 +211,14 @@ export default function Certificates() {
                                     </Column>
                                 </Row>
                                 <Row wrap gap="8" paddingTop="4">
-                                    {cert.tags.map((tag, j) => (
-                                        <Tag key={tag.name} size="m" prefixIcon={(tag as { name: string; icon?: string }).icon} className="interactive-tag">
-                                            {tag.name}
-                                        </Tag>
-                                    ))}
+                                    {cert.tags.map((tag, j) => {
+                                        const icon = (tag as { name: string; icon?: string }).icon;
+                                        return (
+                                            <Tag key={tag.name} size="m" prefixIcon={icon} className={`interactive-tag${icon ? ` tag-icon-${icon}` : ""}`}>
+                                                {tag.name}
+                                            </Tag>
+                                        );
+                                    })}
                                 </Row>
                             </Column>
                         ))}

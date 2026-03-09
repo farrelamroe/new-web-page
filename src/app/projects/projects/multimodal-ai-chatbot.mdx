@@ -37,4 +37,16 @@ The project was developed as part of the **AI Productivity and AI API Integratio
 
 **Environment:** dotenv for API key management
 
+## Challenges
+
+1. **Multimodal Data Handling**: Processing and structuring both text and image payload configurations dynamically before sending them to the Groq API required careful payload construction to prevent API rejection.
+2. **Model Switching Logic**: Dynamically switching between the `llama-3.3-70b-versatile` text model and the `llama-3.2-11b-vision-preview` vision model based on user input (whether an image was attached) without causing response delays or session state loss.
+3. **Frontend Markdown Rendering**: Rendering the LLM's Markdown responses efficiently on the client-side while ensuring code blocks and formatting displayed correctly without XSS vulnerabilities.
+
+## Solutions
+
+- **Robust Context Management**: Centralized the chat history logic on the Node.js server, maintaining a continuous message array and appending base64 encoded images strictly when the vision model is triggered.
+- **Dynamic Routing Controller**: Built a custom controller that evaluates the `req.file` object. If present, the app automatically routes the request to the multimodal vision endpoint; otherwise, it defaults to the faster text-only endpoint.
+- **Sanitized Client Rendering**: Integrated `marked.js` on the vanilla JS frontend to parse the bot's Markdown response into HTML safely, paired with custom CSS to ensure code blocks and lists are styled elegantly.
+
 [GitHub](https://github.com/farrelamroe/gemini-ai-api-project)

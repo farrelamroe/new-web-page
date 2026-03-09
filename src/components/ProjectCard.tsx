@@ -66,7 +66,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
             {technologies?.length > 0 && (
               <Row wrap gap="8">
                 {technologies.map((tech) => (
-                  <Tag key={tech.name} size="m" prefixIcon={tech.icon} className="interactive-tag">
+                  <Tag key={tech.name} size="m" prefixIcon={tech.icon} className={`interactive-tag${tech.icon ? ` tag-icon-${tech.icon}` : ""}`}>
                     {tech.name}
                   </Tag>
                 ))}

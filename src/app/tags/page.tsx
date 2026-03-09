@@ -68,7 +68,7 @@ export default function Tags() {
             return (
               <Link key={tagSlug} href={`/tags/${tagSlug}`} style={{ textDecoration: "none" }}>
                 <Row vertical="center" gap="8" className="interactive-tag-container" style={{ cursor: "pointer" }}>
-                  <Tag size="l" prefixIcon={tagData.icon} className="interactive-tag">
+                  <Tag size="l" prefixIcon={tagData.icon} className={`interactive-tag${tagData.icon ? ` tag-icon-${tagData.icon}` : ""}`}>
                     {tagData.name}
                   </Tag>
                   <Text variant="body-default-s" onBackground="neutral-weak">

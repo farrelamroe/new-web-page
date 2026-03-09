@@ -37,4 +37,16 @@ All development was managed through **GitLab**, with rigorous code review cycles
 
 **Version Control:** GitLab, Agile Sprint Workflow
 
+## Challenges
+
+1. **Complex Role-Based Workflows**: The LMS needed to serve distinct user types (students, instructors, admins) with highly disparate views, deeply coupled progress states, and secure role-based access control.
+2. **State Management Overhead**: Handling dynamic assignments, real-time grading feedback, and asynchronous course content loading natively in React required a bulletproof state management strategy to prevent UI inconsistencies.
+3. **Legacy Component Refactoring**: Integrating new features required modernizing older legacy components without breaking the existing application layout.
+
+## Solutions
+
+- **Modular UI Architecture**: Refactored monolithic legacy components into a composable React hierarchy. Used Bootstrap combined with centralized SCSS variables to ensure aesthetic consistency while allowing modular overrides.
+- **Predictable Data Flow**: Implemented robust hook-based state management and standardized API request handlers to ensure that student assignment submissions immediately reflected in instructor grading dashboards without manual refreshes.
+- **Rigorous GitLab CI/CD & Code Reviews**: Employed a strict feature-branching workflow with thorough peer code reviews on GitLab, effectively preventing regressions during the modernization process within the 15-person engineering team.
+
 [Live App](https://lms.binarian.co/)

@@ -45,7 +45,7 @@ const social: Social = [
   },
   {
     name: "CV",
-    icon: "document",
+    icon: "cv",
     link: "https://drive.google.com/file/d/1mp_1xoAud__fhaJBHaY4VHA3Ym45h7XQ/view?usp=sharing",
     essential: true,
   },

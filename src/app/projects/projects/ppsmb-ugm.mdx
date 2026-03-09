@@ -15,6 +15,8 @@ technologies:
     icon: "tailwind"
   - name: "Three.js"
     icon: "threejs"
+  - name: "Strapi"
+    icon: "strapi"
 ---
 
 ## Overview
@@ -34,6 +36,18 @@ The site integrates multiple high-traffic modules: an event scheduling system, a
 **CMS & Data:** Strapi CMS, Dynamic Content Modules
 
 **Version Control:** GitHub
+
+## Challenges
+
+1. **High Concurrent Traffic Scale**: Anticipating over 9,500 students accessing the site simultaneously during the orientation week, ensuring zero downtime and fast content delivery was critical.
+2. **AR Integration Complexity**: Implementing a performant browser-based AR experience for faculty exploration using Three.js required balancing visual fidelity with strict asset size limitations to prevent long loading times.
+3. **Strict Academic Deadlines**: The entire onboarding platform had to be finalized and stress-tested before the orientation week, leaving no room for timeline extensions.
+
+## Solutions
+
+- **Architectural Scalability**: Leveraged Next.js Server-Side Rendering (SSR) to optimally serve static and dynamic content, reducing client-side load. Deployed on robust infrastructure to manage traffic spikes effectively.
+- **Optimized 3D Assets**: Compressed and optimized WebGL/Three.js models, implementing lazy loading and level-of-detail (LOD) techniques to ensure the AR experience runs smoothly even on entry-level student devices.
+- **Agile Content Management**: Integrated Strapi CMS, allowing the non-technical organizing committee to safely update schedules and news in real-time without requiring code redeployments or risking application stability.
 
 > **Note:** Access requires UGM OpenVPN or on-campus Wi-Fi.
 
