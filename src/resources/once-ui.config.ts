@@ -1,4 +1,4 @@
-import {
+import type {
   DataStyleConfig,
   DisplayConfig,
   EffectsConfig,
@@ -14,7 +14,7 @@ import {
 import { home } from "./index";
 
 // IMPORTANT: Replace with your own domain address - it's used for SEO in meta tags and schema
-const baseURL: string = "https://demo.magic-portfolio.com";
+const baseURL: string = "https://farrel-web-profile.vercel.app";
 
 const routes: RoutesConfig = {
   "/": true,
@@ -22,6 +22,7 @@ const routes: RoutesConfig = {
   "/projects": true,
   "/experience": true,
   "/certificates": true,
+  "/tags": true,
 };
 
 const display: DisplayConfig = {
@@ -188,9 +189,9 @@ const mailchimp: MailchimpConfig = {
 const schema: SchemaConfig = {
   logo: "",
   type: "Organization",
-  name: "Once UI",
+  name: "Farrel Amroe Azhari",
   description: home.description,
-  email: "lorant@once-ui.com",
+  email: "farrelamroe@gmail.com",
 };
 
 // social links
