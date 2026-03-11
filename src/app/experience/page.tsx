@@ -11,7 +11,7 @@ export async function generateMetadata() {
 }
 
 const workExperience = [
-    {
+    /*{
         company: "Applied Artificial Intelligence Laboratory (AAIL)",
         timeframe: "Jan 2026 - Present",
         role: "Software Engineer",
@@ -22,7 +22,7 @@ const workExperience = [
             "Refactored and optimized 10+ frontend modules with Tailwind CSS, cutting navigation load time and improving modal responsiveness across all screen sizes.",
             "Resolved critical Next.js build bottlenecks that previously blocked CI/CD deployments, reducing build failure rate to zero and unblocking the team's release cycle.",
         ],
-    },
+    },*/
     {
         company: "Turnkey Inside - Remote",
         timeframe: "Jun 2025 - Dec 2025",
