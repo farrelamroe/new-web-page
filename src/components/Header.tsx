@@ -101,7 +101,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="person"
                       href="/about"
-                      label={about.label}
+                      label={pathname === "/about" ? about.label : undefined}
                       selected={pathname === "/about"}
                     />
                   </Row>
@@ -121,6 +121,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="rocket"
                       href="/projects"
+                      label={pathname.startsWith("/projects") ? work.label : undefined}
                       selected={pathname.startsWith("/projects")}
                     />
                   </Row>
@@ -140,6 +141,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="work"
                       href="/experience"
+                      label={pathname.startsWith("/experience") ? "Experience" : undefined}
                       selected={pathname.startsWith("/experience")}
                     />
                   </Row>
@@ -159,6 +161,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="certificate"
                       href="/certificates"
+                      label={pathname.startsWith("/certificates") ? "Certificates" : undefined}
                       selected={pathname.startsWith("/certificates")}
                     />
                   </Row>
@@ -178,6 +181,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="hashtag"
                       href="/tags"
+                      label={pathname.startsWith("/tags") ? "Tags" : undefined}
                       selected={pathname.startsWith("/tags")}
                     />
                   </Row>
