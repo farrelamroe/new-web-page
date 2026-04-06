@@ -1,0 +1,52 @@
+---
+title: "Multimodal AI Chatbot"
+publishedAt: "2025-01-01"
+summary: "A full-stack AI chatbot capable of processing both text and image inputs using the Groq API and Llama vision models."
+images: []
+team:
+  - name: "Farrel Amroe Azhari"
+    role: "Full-Stack Developer"
+    avatar: "/images/foto.jpg"
+    linkedIn: "https://www.linkedin.com/in/farrel-amroe-azhari-8b14b5217/"
+technologies:
+  - name: "Node.js"
+    icon: "nodejs"
+  - name: "Express.js"
+    icon: "express"
+  - name: "JavaScript"
+    icon: "javascript"
+  - name: "HTML/CSS"
+    icon: "html"
+  - name: "Groq API"
+    icon: "groq"
+---
+
+## Overview
+
+**Multimodal AI Chatbot** is a full-stack AI chatbot application capable of processing both text and image inputs by integrating the Groq API with an Express.js backend. The system implements dynamic model switching, utilizing `llama-3.3-70b-versatile` for high-performance text generation and `llama-3.2-11b-vision-preview` for analyzing uploaded images. The frontend was built using vanilla JavaScript, HTML, and CSS, featuring a clean chat interface that supports file uploads and renders Markdown responses in real-time.
+
+The project was developed as part of the **AI Productivity and AI API Integration for Developers** course by Hacktiv8, showcasing practical integration of LLM APIs into production-ready web applications.
+
+## Tech Stack & Key Competencies
+
+**Backend:** Node.js, Express.js, Multer (Memory Storage)
+
+**AI & LLM:** Groq SDK, Llama 3.3 (Text), Llama 3.2 Vision (Multimodal)
+
+**Frontend:** HTML5, CSS3, JavaScript, Marked.js (Markdown Parsing)
+
+**Environment:** dotenv for API key management
+
+## Challenges
+
+1. **Multimodal Data Handling**: Processing and structuring both text and image payload configurations dynamically before sending them to the Groq API required careful payload construction to prevent API rejection.
+2. **Model Switching Logic**: Dynamically switching between the `llama-3.3-70b-versatile` text model and the `llama-3.2-11b-vision-preview` vision model based on user input (whether an image was attached) without causing response delays or session state loss.
+3. **Frontend Markdown Rendering**: Rendering the LLM's Markdown responses efficiently on the client-side while ensuring code blocks and formatting displayed correctly without XSS vulnerabilities.
+
+## Solutions
+
+- **Robust Context Management**: Centralized the chat history logic on the Node.js server, maintaining a continuous message array and appending base64 encoded images strictly when the vision model is triggered.
+- **Dynamic Routing Controller**: Built a custom controller that evaluates the `req.file` object. If present, the app automatically routes the request to the multimodal vision endpoint; otherwise, it defaults to the faster text-only endpoint.
+- **Sanitized Client Rendering**: Integrated `marked.js` on the vanilla JS frontend to parse the bot's Markdown response into HTML safely, paired with custom CSS to ensure code blocks and lists are styled elegantly.
+
+[GitHub](https://github.com/farrelamroe/gemini-ai-api-project)

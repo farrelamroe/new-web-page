@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import { getPosts } from "@/utils/utils";
+import { getLocale } from "@/app/dictionaries";
 import {
   Meta,
   Schema,
@@ -23,7 +24,7 @@ import type { Metadata } from "next";
 import { Projects } from "@/components/projects/Projects";
 
 export async function generateStaticParams(): Promise<{ slug: string }[]> {
-  const posts = getPosts(["src", "app", "projects", "projects"]);
+  const posts = getPosts(["src", "app", "projects", "projects", "en"]);
   return posts.map((post) => ({
     slug: post.slug,
   }));
@@ -39,7 +40,8 @@ export async function generateMetadata({
     ? routeParams.slug.join("/")
     : routeParams.slug || "";
 
-  const posts = getPosts(["src", "app", "projects", "projects"]);
+  const locale = await getLocale();
+  const posts = getPosts(["src", "app", "projects", "projects", locale]);
   const post = posts.find((post) => post.slug === slugPath);
 
   if (!post) return {};
@@ -63,7 +65,10 @@ export default async function Project({
     ? routeParams.slug.join("/")
     : routeParams.slug || "";
 
-  const post = getPosts(["src", "app", "projects", "projects"]).find((post) => post.slug === slugPath);
+  const locale = await getLocale();
+  const isID = locale === "id";
+
+  const post = getPosts(["src", "app", "projects", "projects", locale]).find((post) => post.slug === slugPath);
 
   if (!post) {
     notFound();
@@ -95,7 +100,7 @@ export default async function Project({
       />
       <Column maxWidth="s" gap="16" horizontal="center" align="center">
         <SmartLink href="/projects">
-          <Text variant="label-strong-m">Projects</Text>
+          <Text variant="label-strong-m">{isID ? "Proyek" : "Projects"}</Text>
         </SmartLink>
 
         <Heading variant="display-strong-m">{post.metadata.title}</Heading>
@@ -135,9 +140,9 @@ export default async function Project({
       <Column fillWidth gap="40" horizontal="center" marginTop="40">
         <Line maxWidth="40" />
         <Heading as="h2" variant="heading-strong-xl" marginBottom="24">
-          Related projects
+          {isID ? "Proyek terkait" : "Related projects"}
         </Heading>
-        <Projects exclude={[post.slug]} range={[2]} />
+        <Projects exclude={[post.slug]} range={[2]} locale={locale} />
       </Column>
       <ScrollToHash />
     </Column>

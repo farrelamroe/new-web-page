@@ -1,10 +1,11 @@
 import { getPosts } from "@/utils/utils";
+import { getLocale } from "@/app/dictionaries";
 import { Column, Heading, Text, RevealFx, Flex } from "@once-ui-system/core";
 import { ProjectCard } from "@/components";
 import { baseURL } from "@/resources";
 
 export async function generateStaticParams() {
-  const allProjects = getPosts(["src", "app", "projects", "projects"]);
+  const allProjects = getPosts(["src", "app", "projects", "projects", "en"]);
   const tags = new Set<string>();
 
   for (const project of allProjects) {
@@ -44,7 +45,8 @@ export async function generateMetadata({ params }: { params: Promise<{ tag: stri
 
 export default async function TagPage({ params }: { params: Promise<{ tag: string }> }) {
   const { tag } = await params;
-  const allProjects = getPosts(["src", "app", "projects", "projects"]);
+  const locale = await getLocale();
+  const allProjects = getPosts(["src", "app", "projects", "projects", locale]);
   const displayTitle = tag.split("-").map(w => w.charAt(0).toUpperCase() + w.slice(1)).join(" ");
 
   const filteredProjects = allProjects.filter((project) => {

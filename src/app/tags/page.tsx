@@ -2,27 +2,34 @@ import { getPosts } from "@/utils/utils";
 import { Column, Heading, Text, Row, Tag, RevealFx, Flex } from "@once-ui-system/core";
 import Link from "next/link";
 import { baseURL } from "@/resources";
+import { getLocale } from "@/app/dictionaries";
 
-export const metadata = {
-  title: "Tags | Farrel Amroe Azhari",
-  description: "Explore projects by technical skills and categories.",
-  openGraph: {
-    title: "Tags | Farrel Amroe Azhari",
-    description: "Explore projects by technical skills and categories.",
-    url: `${baseURL}/tags`,
-    siteName: "Farrel Amroe Azhari",
-    locale: "en_US",
-    type: "website",
-  },
-  twitter: {
-    title: "Tags | Farrel Amroe Azhari",
-    description: "Explore projects by technical skills and categories.",
-    card: "summary_large_image",
-  },
-};
+export async function generateMetadata() {
+  const locale = await getLocale();
+  const title = locale === "id" ? "Label | Farrel Amroe Azhari" : "Tags | Farrel Amroe Azhari";
+  const desc = locale === "id" ? "Jelajahi proyek berdasarkan keterampilan teknis dan kategori." : "Explore projects by technical skills and categories.";
+  return {
+    title: title,
+    description: desc,
+    openGraph: {
+      title: title,
+      description: desc,
+      url: `${baseURL}/tags`,
+      siteName: "Farrel Amroe Azhari",
+      locale: locale === "id" ? "id_ID" : "en_US",
+      type: "website",
+    },
+    twitter: {
+      title: title,
+      description: desc,
+      card: "summary_large_image",
+    },
+  };
+}
 
-export default function Tags() {
-  const allProjects = getPosts(["src", "app", "projects", "projects"]);
+export default async function Tags() {
+  const locale = await getLocale();
+  const allProjects = getPosts(["src", "app", "projects", "projects", locale]);
 
   // Extract and count all tags (technologies) safely
   const tagCounts: Record<string, { count: number; icon?: string; name: string }> = {};

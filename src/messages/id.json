@@ -1,0 +1,44 @@
+{
+  "Navigation": {
+    "home": "Beranda",
+    "about": "Tentang",
+    "projects": "Proyek",
+    "experience": "Pengalaman",
+    "certificates": "Sertifikat",
+    "themeSwitcher": {
+      "light": "Mode Terang",
+      "dark": "Mode Gelap",
+      "system": "Tema Sistem"
+    }
+  },
+  "About": {
+    "title": "Perkenalan",
+    "description": "Farrel adalah seorang software engineer yang penuh semangat dalam mengubah tantangan kompleks menjadi solusi yang terukur dan elegan. Karyanya mencakup arsitektur backend, pengalaman frontend, serta integrasi AI dan data engineering untuk memecahkan masalah di dunia nyata. Ia sangat tertarik pada perpaduan rekayasa perangkat lunak dan sistem cerdas, mulai dari membangun alat berbasis LLM hingga merancang pipelines deep learning untuk tugas NLP.",
+    "studiesTitle": "Pendidikan",
+    "studiesDesc": "Gelar Sarjana Ilmu Komputer, 3.81/4.00 (Agu 2021 - Apr 2025)",
+    "skillsTitle": "Keahlian Teknis",
+    "achievementsTitle": "Pencapaian"
+  },
+  "Skills": {
+    "programming": {
+      "title": "Bahasa Pemrograman",
+      "description": "Mahir dalam berbagai paradigma, scripting, sistem, dan bahasa query, untuk memilih alat yang tepat bagi setiap masalah."
+    },
+    "web": {
+      "title": "Pengembangan Web",
+      "description": "Membangun aplikasi web responsif dan berkinerja tinggi dari awal, mengubah desain menjadi pengalaman interaktif yang sempurna (pixel-perfect)."
+    },
+    "dataAi": {
+      "title": "Data & AI Engineering",
+      "description": "Mengintegrasikan LLM dan model deep learning ke dalam sistem produksi, dari dasbor real-time hingga pipelines NLP."
+    },
+    "tools": {
+      "title": "Alat & Platform",
+      "description": "Nyaman menggunakan berbagai toolchain pengembangan, mulai dari version control dan CI/CD hingga design handoff dan deployment cloud."
+    }
+  },
+  "Footer": {
+    "builtWith": "Dibuat dengan",
+    "by": "oleh"
+  }
+}

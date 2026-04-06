@@ -1,0 +1,52 @@
+---
+title: "Binar Academy LMS"
+publishedAt: "2023-12-01"
+summary: "Sistem Manajemen Pembelajaran (LMS) berbasis web yang dibangun untuk Binar Academy, dikembangkan selama magang Frontend Engineer 5 bulan menggunakan React.js, Bootstrap, dan SCSS."
+images: []
+team:
+  - name: "Farrel Amroe Azhari"
+    role: "Frontend Engineer Intern"
+    avatar: "/images/foto.jpg"
+    linkedIn: "https://www.linkedin.com/in/farrel-amroe-azhari-8b14b5217/"
+technologies:
+  - name: "React.js"
+    icon: "react"
+  - name: "Bootstrap"
+    icon: "bootstrap"
+  - name: "SCSS"
+    icon: "scss"
+  - name: "GitLab"
+    icon: "gitlab"
+---
+
+## Ringkasan
+
+**Binar Academy LMS** adalah Sistem Manajemen Pembelajaran berbasis web yang digunakan oleh perusahaan dan instruktur untuk menyampaikan program pembelajaran terstruktur bagi siswa Binar Academy. Dikembangkan selama magang Frontend Engineer 5 bulan, proyek ini merupakan hasil kolaborasi tim engineer Agile beranggotakan 15 orang.
+
+Platform ini dilengkapi dengan manajemen kursus, pelacakan kemajuan siswa, pengiriman tugas, dan dasbor instruktur. Frontend dibangun menggunakan **React.js** dengan **Bootstrap** dan **SCSS** kustom untuk memastikan konsistensi visual di semua komponen. Integrasi API RESTful menangani rendering data dinamis untuk kursus dan konten pengguna.
+
+Seluruh pengembangan dikelola melalui **GitLab**, dengan siklus tinjauan kode yang ketat untuk memastikan kualitas kode yang tinggi dan responsivitas lintas perangkat.
+
+## Tech Stack & Kompetensi Utama
+
+**Framework:** React.js (Arsitektur berbasis komponen)
+
+**Styling:** Bootstrap, SCSS (Tema Kustom)
+
+**Integrasi API:** API RESTful, Rendering Data Dinamis
+
+**Kontrol Versi:** GitLab, Alur Kerja Sprint Agile
+
+## Tantangan
+
+1. **Alur Kerja Berbasis Peran yang Kompleks**: LMS harus melayani tipe pengguna yang berbeda (siswa, instruktur, admin) dengan tampilan yang sangat berbeda, status kemajuan yang saling terhubung erat, dan kontrol akses berbasis peran yang aman.
+2. **Kelebihan Beban Manajemen State**: Menangani tugas dinamis, umpan balik penilaian real-time, dan pemuatan konten kursus asinkron secara native di React membutuhkan strategi manajemen state yang tangguh agar UI tetap konsisten.
+3. **Refactoring Komponen Lama**: Mengintegrasikan fitur baru memerlukan modernisasi komponen lama tanpa merusak tata letak aplikasi yang sudah ada.
+
+## Solusi
+
+- **Arsitektur UI Modular**: Memfaktorkan ulang komponen monolitik lama menjadi hierarki React yang dapat disusun (composable). Menggunakan Bootstrap yang dipadukan dengan variabel SCSS terpusat untuk memastikan konsistensi estetika sekaligus memungkinkan penyesuaian (override) modular.
+- **Aliran Data yang Terprediksi**: Mengimplementasikan manajemen state berbasis hook yang kuat dan penangan permintaan API standar untuk memastikan bahwa penyerahan tugas siswa segera tercermin dalam dasbor penilaian instruktur tanpa memuat ulang halaman.
+- **CI/CD GitLab & Tinjauan Kode yang Ketat**: Menerapkan alur kerja percabangan fitur (feature-branching) yang ketat dengan tinjauan kode sejawat yang menyeluruh di GitLab, yang secara efektif mencegah regresi selama proses modernisasi dalam tim engineer beranggotakan 15 orang.
+
+[Aplikasi Live](https://lms.binarian.co/)

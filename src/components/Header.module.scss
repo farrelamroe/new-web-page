@@ -19,3 +19,21 @@
         bottom: 0;
     }
 }
+
+/* Global keyframe so it works with inline style animation references */
+:global {
+    @keyframes langPulse {
+        0% {
+            opacity: 0.6;
+            transform: scale(1);
+        }
+        70% {
+            opacity: 0;
+            transform: scale(1.5);
+        }
+        100% {
+            opacity: 0;
+            transform: scale(1.5);
+        }
+    }
+}

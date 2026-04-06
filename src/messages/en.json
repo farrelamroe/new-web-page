@@ -1,0 +1,44 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About",
+    "projects": "Projects",
+    "experience": "Experience",
+    "certificates": "Certificates",
+    "themeSwitcher": {
+      "light": "Light Mode",
+      "dark": "Dark Mode",
+      "system": "System Theme"
+    }
+  },
+  "About": {
+    "title": "Introduction",
+    "description": "Farrel is a software engineer with a passion for transforming complex challenges into scalable, elegant solutions. His work spans backend architectures, frontend experiences, and the integration of AI and data engineering to solve real-world problems. He is particularly drawn to the intersection of software engineering and intelligent systems, from building LLM-powered tools to designing deep learning pipelines for NLP tasks.",
+    "studiesTitle": "Studies",
+    "studiesDesc": "Bachelor Degree in Computer Science, 3.81/4.00 (Aug 2021 - Apr 2025)",
+    "skillsTitle": "Technical skills",
+    "achievementsTitle": "Achievements"
+  },
+  "Skills": {
+    "programming": {
+      "title": "Programming Languages",
+      "description": "Proficient in multiple paradigms, scripting, systems, and query languages, to pick the right tool for every problem."
+    },
+    "web": {
+      "title": "Web Development",
+      "description": "Building responsive, high-performance web apps from scratch, turning designs into pixel-perfect, interactive experiences."
+    },
+    "dataAi": {
+      "title": "Data & AI Engineering",
+      "description": "Integrating LLMs and deep learning models into production systems, from real-time dashboards to NLP pipelines."
+    },
+    "tools": {
+      "title": "Tools & Platforms",
+      "description": "Comfortable with the full dev toolchain, from version control and CI/CD to design handoff and cloud deployment."
+    }
+  },
+  "Footer": {
+    "builtWith": "Built with",
+    "by": "by"
+  }
+}

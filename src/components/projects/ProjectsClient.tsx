@@ -25,13 +25,26 @@ interface Project {
 
 interface ProjectsClientProps {
   projects: Project[];
+  locale?: "en" | "id";
 }
 
-export function ProjectsClient({ projects }: ProjectsClientProps) {
+export function ProjectsClient({ projects, locale = "en" }: ProjectsClientProps) {
   const [searchValue, setSearchValue] = useState("");
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const categories = ["All", "Frontend", "Backend", "AI & Data", "Mobile"];
+  const isID = locale === "id";
+
+  const categoryAll = isID ? "Semua" : "All";
+  const categoryFrontend = "Frontend";
+  const categoryBackend = "Backend";
+  const categoryAIData = "AI & Data";
+  const categoryMobile = "Mobile";
+
+  const categories = [categoryAll, categoryFrontend, categoryBackend, categoryAIData, categoryMobile];
+
+  // Initialize activeCategory properly based on locale if it's default
+  // But wait, if they switch language, `activeCategory` might be stuck on "All" instead of "Semua". Let's handle it by treating "All" and "Semua" interchangeably for filtering.
+  const isAllCategory = activeCategory === "All" || activeCategory === "Semua";
 
   const filteredProjects = projects.filter((post) => {
     // Category filter logic
@@ -40,19 +53,20 @@ export function ProjectsClient({ projects }: ProjectsClientProps) {
     const titleAndSummary = `${post.metadata.title} ${post.metadata.summary}`.toLowerCase();
     const fullSearchStr = `${techWords} ${titleAndSummary} ${post.content}`.toLowerCase();
 
-    if (activeCategory === "Frontend") {
+    if (activeCategory === categoryFrontend) {
       matchesCategory = /react|next|vue|angular|tailwind|bootstrap|scss|html|frontend/i.test(`${techWords} ${titleAndSummary}`);
-    } else if (activeCategory === "Backend") {
+    } else if (activeCategory === categoryBackend) {
       matchesCategory = /node|express|go |golang|java|sql|postgres|redis|elastic|api|backend/i.test(`${techWords} ${titleAndSummary}`);
-    } else if (activeCategory === "AI & Data") {
+    } else if (activeCategory === categoryAIData) {
       matchesCategory = /python|streamlit|tensorflow|keras|llm|gemini|groq|bilstm|machine learning|data monitoring/i.test(`${techWords} ${titleAndSummary}`);
-    } else if (activeCategory === "Mobile") {
+    } else if (activeCategory === categoryMobile) {
       matchesCategory = /flutter|dart|mobile/i.test(`${techWords} ${titleAndSummary}`);
     }
 
     const matchesSearch = fullSearchStr.includes(searchValue.toLowerCase());
 
-    return matchesCategory && matchesSearch;
+    // Fix: if it's 'All' or 'Semua', let it match category unconditionally
+    return (isAllCategory ? true : matchesCategory) && matchesSearch;
   });
 
   return (
@@ -61,33 +75,42 @@ export function ProjectsClient({ projects }: ProjectsClientProps) {
         {/* Search Input for Projects */}
         <Input
           id="project-search"
-          label="Search Projects"
+          label={isID ? "Cari Proyek" : "Search Projects"}
           type="text"
           value={searchValue}
           onChange={(e) => setSearchValue(e.target.value)}
-          placeholder="Search by title, technology, or description..."
+          placeholder={isID ? "Cari berdasarkan judul, teknologi, atau deskripsi..." : "Search by title, technology, or description..."}
           hasPrefix={<span style={{ paddingLeft: "12px", color: "var(--neutral-on-background-weak)" }}>🔍</span>}
         />
 
         {/* Category Filters */}
         <Row wrap gap="8" fillWidth>
-          {categories.map((category) => (
-            <Button
-              key={category}
-              label={category}
-              size="s"
-              weight="default"
-              variant={activeCategory === category ? "primary" : "secondary"}
-              onClick={() => setActiveCategory(category)}
-            />
-          ))}
+          {categories.map((category) => {
+            // Also need to correctly show 'primary' variant if they are identical 
+            const isActive = activeCategory === category || 
+              (isAllCategory && (category === "All" || category === "Semua"));
+
+            return (
+              <Button
+                key={category}
+                label={category}
+                size="s"
+                weight="default"
+                variant={isActive ? "primary" : "secondary"}
+                onClick={() => setActiveCategory(category)}
+              />
+            );
+          })}
         </Row>
       </Column>
 
       {/* Projects List */}
       {!filteredProjects.length && (
         <Text variant="body-default-m" onBackground="neutral-weak">
-          No projects found for "{searchValue}" {activeCategory !== "All" ? `in ${activeCategory}` : ""}.
+          {isID 
+            ? `Tidak ada proyek yang ditemukan untuk "${searchValue}" ${isAllCategory ? "" : `di kategori ${activeCategory}`}.`
+            : `No projects found for "${searchValue}" ${isAllCategory ? "" : `in ${activeCategory}`}.`
+          }
         </Text>
       )}
 

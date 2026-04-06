@@ -4,10 +4,11 @@ import { ProjectsClient } from "./ProjectsClient";
 interface ProjectsProps {
   range?: [number, number?];
   exclude?: string[];
+  locale?: "en" | "id";
 }
 
-export function Projects({ range, exclude }: ProjectsProps) {
-  let allProjects = getPosts(["src", "app", "projects", "projects"]);
+export function Projects({ range, exclude, locale = "en" }: ProjectsProps) {
+  let allProjects = getPosts(["src", "app", "projects", "projects", locale]);
 
   // Exclude by slug (exact match)
   if (exclude && exclude.length > 0) {
@@ -22,6 +23,5 @@ export function Projects({ range, exclude }: ProjectsProps) {
     ? sortedProjects.slice(range[0] - 1, range[1] ?? sortedProjects.length)
     : sortedProjects;
 
-  return <ProjectsClient projects={displayedProjects} />;
+  return <ProjectsClient projects={displayedProjects} locale={locale} />;
 }
-

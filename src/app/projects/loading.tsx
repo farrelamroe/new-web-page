@@ -2,7 +2,7 @@ import { Column, Row, Flex, Skeleton, Grid, Heading } from "@once-ui-system/core
 
 export default function Loading() {
   // Create an array of 6 elements to represent loading cards
-  const skeletons = Array(6).fill(0);
+  const skeletons = [1, 2, 3, 4, 5, 6];
 
   return (
     <Column maxWidth="m">
@@ -24,9 +24,9 @@ export default function Loading() {
 
       {/* Grid of project card skeletons */}
       <Grid columns="3" gap="m">
-        {skeletons.map((_, i) => (
+        {skeletons.map((id) => (
           <Column
-            key={`skeleton-card-${i}`}
+            key={`skeleton-card-${id}`}
             fillWidth
             padding="24"
             gap="16"

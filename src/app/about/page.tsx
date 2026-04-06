@@ -12,13 +12,16 @@ import {
   Schema,
   Row,
 } from "@once-ui-system/core";
-import { baseURL, about, person, social } from "@/resources";
+import { baseURL } from "@/resources";
 import TableOfContents from "@/components/about/TableOfContents";
 import { GithubContributions } from "@/components/about/GithubCalendar";
 import styles from "@/components/about/about.module.scss";
 import React from "react";
+import { getDictionary } from "@/app/dictionaries";
 
 export async function generateMetadata() {
+  const dict = await getDictionary();
+  const { about } = dict;
   return Meta.generate({
     title: about.title,
     description: about.description,
@@ -28,7 +31,10 @@ export async function generateMetadata() {
   });
 }
 
-export default function About() {
+export default async function About() {
+  const dict = await getDictionary();
+  const { about, person, social } = dict;
+
   const structure = [
     {
       title: about.intro.title,

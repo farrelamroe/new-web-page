@@ -2,7 +2,12 @@ import { Row, IconButton, Text } from "@once-ui-system/core";
 import { person, social } from "@/resources";
 import styles from "./Footer.module.scss";
 
-export const Footer = () => {
+type FooterProps = {
+  builtWith: string;
+  by: string;
+};
+
+export const Footer = ({ builtWith, by }: FooterProps) => {
   const currentYear = new Date().getFullYear();
 
   return (
@@ -22,12 +27,12 @@ export const Footer = () => {
         }}
       >
         <Text variant="body-default-s" onBackground="neutral-strong">
-          <Text onBackground="neutral-weak">© {currentYear} /</Text>
+          <Text onBackground="neutral-weak">© {currentYear} / {builtWith} Next.js {by}</Text>
           <Text paddingX="4">{person.name}</Text>
         </Text>
         <Row gap="16">
           {social.map(
-            (item) =>
+            (item: { name: string; icon: string; link: string }) =>
               item.link && (
                 <IconButton
                   key={item.name}

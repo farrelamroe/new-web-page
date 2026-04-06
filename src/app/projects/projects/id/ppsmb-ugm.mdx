@@ -1,0 +1,54 @@
+---
+title: "PPSMB UGM 2023"
+publishedAt: "2023-08-01"
+summary: "The official PPSMB Pionir Gadjah Mada 2023 website serving as the centralized information hub for 9,500+ new student users, featuring AR faculty exploration built with Three.js."
+images: []
+team:
+  - name: "Farrel Amroe Azhari"
+    role: "Software Engineer"
+    avatar: "/images/foto.jpg"
+    linkedIn: "https://www.linkedin.com/in/farrel-amroe-azhari-8b14b5217/"
+technologies:
+  - name: "Next.js"
+    icon: "nextjs"
+  - name: "Tailwind CSS"
+    icon: "tailwind"
+  - name: "Three.js"
+    icon: "threejs"
+  - name: "Strapi"
+    icon: "strapi"
+---
+
+## Overview
+
+**PPSMB Pionir Gadjah Mada 2023** is the official onboarding website for UGM's new student orientation program, serving as the primary information hub for **9,500+ concurrent student users**. Developed by the Humpubit division, the project required a highly scalable, content-rich platform built and delivered within a strict academic calendar deadline.
+
+The site integrates multiple high-traffic modules: an event scheduling system, a student club (UKM) directory, a real-time news portal (*Palapedia*), and a student-ID-based group locator. The standout feature is an **immersive Augmented Reality (AR) experience** built with Three.js, enabling students to interactively explore faculty profiles directly in the browser — a first for any UGM orientation website.
+
+## Tech Stack & Key Competencies
+
+**Framework:** Next.js (SSR, App Router)
+
+**Styling:** Tailwind CSS, Fully Responsive Design
+
+**3D & AR:** Three.js (WebGL-based Augmented Reality)
+
+**CMS & Data:** Strapi CMS, Dynamic Content Modules
+
+**Version Control:** GitHub
+
+## Challenges
+
+1. **High Concurrent Traffic Scale**: Anticipating over 9,500 students accessing the site simultaneously during the orientation week, ensuring zero downtime and fast content delivery was critical.
+2. **AR Integration Complexity**: Implementing a performant browser-based AR experience for faculty exploration using Three.js required balancing visual fidelity with strict asset size limitations to prevent long loading times.
+3. **Strict Academic Deadlines**: The entire onboarding platform had to be finalized and stress-tested before the orientation week, leaving no room for timeline extensions.
+
+## Solutions
+
+- **Architectural Scalability**: Leveraged Next.js Server-Side Rendering (SSR) to optimally serve static and dynamic content, reducing client-side load. Deployed on robust infrastructure to manage traffic spikes effectively.
+- **Optimized 3D Assets**: Compressed and optimized WebGL/Three.js models, implementing lazy loading and level-of-detail (LOD) techniques to ensure the AR experience runs smoothly even on entry-level student devices.
+- **Agile Content Management**: Integrated Strapi CMS, allowing the non-technical organizing committee to safely update schedules and news in real-time without requiring code redeployments or risking application stability.
+
+> **Note:** Access requires UGM OpenVPN or on-campus Wi-Fi.
+
+[Live Site](https://ppsmb.ugm.ac.id/2023/)

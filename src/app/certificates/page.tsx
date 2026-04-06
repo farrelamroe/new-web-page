@@ -1,12 +1,16 @@
 import { Column, Heading, Row, Tag, Text, Meta, Schema, Line } from "@once-ui-system/core";
-import { baseURL, about, person } from "@/resources";
+import { baseURL } from "@/resources";
+import { getDictionary, getLocale } from "@/app/dictionaries";
 
 export async function generateMetadata() {
+    const locale = await getLocale();
+    const dict = await getDictionary();
+    const { person } = dict;
     return Meta.generate({
-        title: `Certificates – ${person.name}`,
-        description: `Certifications and professional modules completed by ${person.name}`,
+        title: locale === "id" ? `Sertifikat – ${person.name}` : `Certificates – ${person.name}`,
+        description: locale === "id" ? `Sertifikasi dan modul profesional yang diselesaikan oleh ${person.name}` : `Certifications and professional modules completed by ${person.name}`,
         baseURL: baseURL,
-        path: "/certificates",
+        path: `/${locale}/certificates`,
     });
 }
 
@@ -138,7 +142,11 @@ const certificates = [
     },
 ];
 
-export default function Certificates() {
+export default async function Certificates() {
+    const locale = await getLocale();
+    const dict = await getDictionary();
+    const { person, about } = dict;
+
     // Group by year
     const byYear = certificates.reduce<Record<string, typeof certificates>>((acc, cert) => {
         if (!acc[cert.year]) acc[cert.year] = [];
@@ -148,23 +156,26 @@ export default function Certificates() {
 
     const years = Object.keys(byYear).sort((a, b) => Number(b) - Number(a));
 
+    const pageTitle = locale === "id" ? "Sertifikat & Modul" : "Certificates & Modules";
+    const pageDescription = locale === "id" ? `Sertifikasi dan modul yang diselesaikan oleh ${person.name}` : `Certifications and modules completed by ${person.name}`;
+
     return (
         <Column maxWidth="m" paddingY="24" gap="xl">
             <Schema
                 as="webPage"
                 baseURL={baseURL}
-                path="/certificates"
-                title={`Certificates – ${person.name}`}
-                description={`Certifications and modules completed by ${person.name}`}
+                path={`/${locale}/certificates`}
+                title={`${pageTitle} – ${person.name}`}
+                description={pageDescription}
                 image="/api/og/generate?title=Certificates"
                 author={{
                     name: person.name,
-                    url: `${baseURL}${about.path}`,
+                    url: `${baseURL}/${locale}${about.path}`,
                     image: `${baseURL}${person.avatar}`,
                 }}
             />
 
-            <Heading variant="display-strong-s">Certificates & Modules</Heading>
+            <Heading variant="display-strong-s">{pageTitle}</Heading>
 
             {years.map((year) => (
                 <Column key={year} fillWidth gap="l">
@@ -205,7 +216,7 @@ export default function Certificates() {
                                                 onBackground="brand-medium"
                                                 style={{ textDecoration: "none" }}
                                             >
-                                                View Certificate →
+                                                {locale === "id" ? "Lihat Sertifikat →" : "View Certificate →"}
                                             </Text>
                                         )}
                                     </Column>

@@ -1,13 +1,20 @@
 "use client";
 
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useEffect, useState } from "react";
 
-import { Fade, Flex, Line, Row, ToggleButton } from "@once-ui-system/core";
+import { Fade, Flex, Line, Row, ToggleButton, Button } from "@once-ui-system/core";
 
 import { routes, display, person, about, work } from "@/resources";
 import { ThemeToggle } from "./ThemeToggle";
 import styles from "./Header.module.scss";
+
+const getActiveCookieLocale = (): "en" | "id" => {
+  if (typeof document === "undefined") return "en";
+  const match = document.cookie.match(/(?:^|;\s*)NEXT_LOCALE=([^;]+)/);
+  const val = match?.[1];
+  return val === "id" ? "id" : "en";
+};
 
 type TimeDisplayProps = {
   timeZone: string;
@@ -44,6 +51,28 @@ export default TimeDisplay;
 
 export const Header = () => {
   const pathname = usePathname() ?? "";
+  const router = useRouter();
+  const [activeLocale, setActiveLocale] = useState<"en" | "id">("en");
+
+  useEffect(() => {
+    setActiveLocale(getActiveCookieLocale());
+  }, []);
+
+  const switchLanguage = (locale: "en" | "id") => {
+    document.cookie = `NEXT_LOCALE=${locale}; path=/; max-age=31536000`;
+    setActiveLocale(locale);
+    router.refresh();
+  };
+
+  const isID = activeLocale === "id";
+
+  const navLabels = {
+    about:        isID ? "Tentang"     : about.label,
+    projects:     isID ? "Proyek"      : work.label,
+    experience:   isID ? "Pengalaman"  : "Experience",
+    certificates: isID ? "Sertifikat"  : "Certificates",
+    tags:         isID ? "Label"        : "Tags",
+  };
 
   return (
     <>
@@ -93,7 +122,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="person"
                       href="/about"
-                      label={about.label}
+                      label={navLabels.about}
                       selected={pathname === "/about"}
                     />
                   </Row>
@@ -101,7 +130,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="person"
                       href="/about"
-                      label={pathname === "/about" ? about.label : undefined}
+                      label={pathname === "/about" ? navLabels.about : undefined}
                       selected={pathname === "/about"}
                     />
                   </Row>
@@ -113,7 +142,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="rocket"
                       href="/projects"
-                      label={work.label}
+                      label={navLabels.projects}
                       selected={pathname.startsWith("/projects")}
                     />
                   </Row>
@@ -121,7 +150,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="rocket"
                       href="/projects"
-                      label={pathname.startsWith("/projects") ? work.label : undefined}
+                      label={pathname.startsWith("/projects") ? navLabels.projects : undefined}
                       selected={pathname.startsWith("/projects")}
                     />
                   </Row>
@@ -133,7 +162,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="work"
                       href="/experience"
-                      label="Experience"
+                      label={navLabels.experience}
                       selected={pathname.startsWith("/experience")}
                     />
                   </Row>
@@ -141,7 +170,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="work"
                       href="/experience"
-                      label={pathname.startsWith("/experience") ? "Experience" : undefined}
+                      label={pathname.startsWith("/experience") ? navLabels.experience : undefined}
                       selected={pathname.startsWith("/experience")}
                     />
                   </Row>
@@ -153,7 +182,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="certificate"
                       href="/certificates"
-                      label="Certificates"
+                      label={navLabels.certificates}
                       selected={pathname.startsWith("/certificates")}
                     />
                   </Row>
@@ -161,7 +190,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="certificate"
                       href="/certificates"
-                      label={pathname.startsWith("/certificates") ? "Certificates" : undefined}
+                      label={pathname.startsWith("/certificates") ? navLabels.certificates : undefined}
                       selected={pathname.startsWith("/certificates")}
                     />
                   </Row>
@@ -173,7 +202,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="hashtag"
                       href="/tags"
-                      label="Tags"
+                      label={navLabels.tags}
                       selected={pathname.startsWith("/tags")}
                     />
                   </Row>
@@ -181,7 +210,7 @@ export const Header = () => {
                     <ToggleButton
                       prefixIcon="hashtag"
                       href="/tags"
-                      label={pathname.startsWith("/tags") ? "Tags" : undefined}
+                      label={pathname.startsWith("/tags") ? navLabels.tags : undefined}
                       selected={pathname.startsWith("/tags")}
                     />
                   </Row>
@@ -193,6 +222,57 @@ export const Header = () => {
                   <ThemeToggle />
                 </>
               )}
+              {/* Language Switcher */}
+              <Line background="neutral-alpha-medium" vert maxHeight="24" />
+              <Row gap="4" vertical="center" paddingX="8">
+                {(["en", "id"] as const).map((lang) => {
+                  const isActive = activeLocale === lang;
+                  return (
+                    <button
+                      key={lang}
+                      type="button"
+                      onClick={() => switchLanguage(lang)}
+                      suppressHydrationWarning
+                      style={{
+                        position: "relative",
+                        padding: "3px 10px",
+                        borderRadius: "6px",
+                        fontSize: "11px",
+                        fontWeight: 600,
+                        letterSpacing: "0.06em",
+                        cursor: "pointer",
+                        border: isActive
+                          ? "1.5px solid var(--brand-alpha-strong)"
+                          : "1.5px solid transparent",
+                        background: isActive
+                          ? "var(--brand-alpha-weak)"
+                          : "transparent",
+                        color: isActive
+                          ? "var(--brand-on-background-medium)"
+                          : "var(--neutral-medium)",
+                        transition: "all 0.2s cubic-bezier(0.4, 0, 0.2, 1)",
+                        boxShadow: "none",
+                        transform: isActive ? "scale(1.05)" : "scale(1)",
+                      }}
+                    >
+                      {lang.toUpperCase()}
+                      {isActive && (
+                        <span
+                          style={{
+                            position: "absolute",
+                            inset: -3,
+                            borderRadius: 9,
+                            border: "1.5px solid var(--brand-solid-strong)",
+                            opacity: 0,
+                            animation: "langPulse 1.8s ease-out infinite",
+                            pointerEvents: "none",
+                          }}
+                        />
+                      )}
+                    </button>
+                  );
+                })}
+              </Row>
             </Row>
           </Row>
         </Row>

@@ -225,6 +225,14 @@ export interface About extends BasePageConfig {
       year?: string;
     }>;
   };
+  /** Organizational & Volunteer experience section */
+  orgExperiences?: Array<{
+    company: string;
+    timeframe: string;
+    role: string;
+    achievements: React.ReactNode[];
+    images?: Array<{ src: string; alt: string; width: number; height: number }>;
+  }>;
 }
 
 /**
